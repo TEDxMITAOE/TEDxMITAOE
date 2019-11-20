@@ -1,0 +1,500 @@
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>TEDx MITAOE</title>
+        <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="typed.js"></script>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name=" theme-color" content="#000">
+        <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+             
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!--Import materialize.css-->
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    
+    <!--Let browser know website is optimized for mobile-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js">
+    </head>
+
+    <style>
+    body{
+        background: black;
+    }
+
+    .material-icons{
+        font-size: 34px;
+        
+    }
+    .logo{
+        height: 80px;
+        width: 300px;
+        margin-left: 100px;
+    }
+    .pp{
+        margin-right: 40px;
+    }
+    .hrabout{
+    border-bottom: 2px solid #e62b1e;
+    width: 60px;;
+}
+.data{
+    width: 600px;   
+    text-align: justify;
+  text-justify: inter-word;
+  height: 200px;
+}
+.data1{
+    width: 600px; 
+    text-align: justify;
+  text-justify: inter-word;
+}
+.bulb 
+{
+    height:210px;
+    width:550px;
+}
+
+.spongrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 250px;
+}
+
+
+
+.line{
+    background: #e62b1e;
+    height: 5px;
+    border-bottom-right-radius:100px; 
+}
+
+.joingrid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.joinimg img{ 
+    height: 300px;
+    width: 700px;
+}
+.btnn{
+    margin-top: 70px;
+}
+.btnn button{
+    background: black;
+    color: white;
+    border: 2px solid red;
+    width: 140px;
+    height: 50px;
+}
+.btnn a{
+    color: white;
+}
+.fgrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 100px;
+}
+.itm2{
+    margin-left: 300px;
+}
+.loader{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+}
+
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+.loader > img{
+    width: 1000px;
+}
+@keyframes fadeOut{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.p ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.p ul li a{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transition: .5s;
+    background: linear-gradient(0deg,#ddd,#fff);
+}
+
+.p ul li a:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.p ul li a .fa{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: red;
+    border-radius: 50%;
+    line-height: calc(50px - 6px);
+    font-size: 20px;
+    color: #262626;
+    transform: .5s;
+
+}
+
+.p ul li a #fac{
+background:#3b5998;
+color:white;
+}
+
+.p ul li a #fac:hover{
+background:#e62b1e;
+color:#3b5998;
+}
+
+.p ul li a #twi{
+background:#1da1f2;
+color:white;
+}
+
+.p ul li a #twi:hover{
+background:#e62b1e;
+color:#1da1f2;
+}
+
+
+.p ul li a #inst{
+background:#c32aa3;
+color:white;
+}
+
+.p ul li a #inst:hover{
+background:#e62b1e;
+color:#c32aa3;
+}
+
+.itm2 button{
+   color: white;
+   background: black;
+   border: black;
+}
+a:hover{
+    color: white;
+}
+#sidenav-2{
+    background: black;
+    color: white;
+}
+#sidenav-2 a{
+    color: white;
+}
+@media only screen and (max-width: 600px) {
+    .data{
+        width: 340px;
+    }
+    .data1{
+        width: 340px;
+    }
+    
+   .fgrid{
+       display: grid;
+       grid-template-columns: auto;
+   }
+   .itm2{
+       margin-left: 0px;
+   }
+   .spongrid{
+       display: grid;
+       grid-template-columns: auto;
+       margin-left: 30px;
+       grid-gap: 60px;
+   }
+   .joingrid{
+       display: grid;
+      
+   }
+   .joinimg img{
+       width: 200px;
+   }
+   .data{
+       height: 230px;
+   }
+   .logo{
+        height: 80px;
+        width: 260px;
+        margin-left: 50px;
+    }
+    .pp{
+        margin-right: 20px;
+    }
+.bulb 
+	{
+    height:210px;
+    width:340px;
+    margin-top:80px;	
+	}
+.itm2 p
+	{
+		
+		text-right:133px;
+		
+	}
+	
+
+	
+	
+}
+    </style>
+
+<body>
+    <br>
+<div class="nav">
+    <ul>
+       
+                <li class="pp"><a href="#"  data-target="sidenav-2" class="right sidenav-trigger show-on-medium-and-up"><i class="material-icons" style="color:red;">menu</i></a></li>
+       
+                <li><a href="index.html"><img class="logo" src="balck aside logo.png" class="logo"  ></a></li>
+     
+    <!-- RIGHT SIDEBAR	 -->
+<ul id="sidenav-2" class="sidenav">    
+	<li><a href="index.html">Home</a></li>
+    <li><a href="#aboutus">About</a></li>
+    <li><a href="team.html" >Team</a></li>
+    	<li><a href="#" >Call for Proposals</a>
+            	<li><a href="http://bit.ly/jointedxmitaoe" >Call for Volunteers</a></li>
+                	<li><a href="mailto: tedx@mitaoe.ac.in">Contact Us</a></li>
+</ul>
+
+    </ul>
+</div>
+
+
+<!-- Here is the Image is Started  -->
+
+<div >
+   <center> <img class="bulb" data-aos="fade-up" class="responsive-img"  src="img/bulb pendulum.gif" alt="" ></center>
+     <center> <h1 "> <font color="#e62b1e" >Momentum</font></h1></center>
+</div>
+
+<div class="aboutus" id="aboutus">
+        
+        <hr class="hrabout">
+        <center>
+            <div class="data" data-aos="fade-up">
+                <span style="color:white">Momentum, that drive the world keeps talking about. The energy, the force, the strength, the thrust that motivates us to burst the bubbles of our comfort zones and enforces us to thrive on our ambitions, to conquer our inhibitions and to achieve our ultimate goals.Momentum suggests motion, demands anything but stagnancy. And that's somethings we have been bred upon. From the sacred lessons in our holy Vedas to the uptown contemporary writers these days, we are constantly hammered with the importance of momentum.</span><span data-aos="fade-up-right">
+                        Wherever you are, whatever you do, whichever place you dream of getting to, the answer is just one- momentum.
+        
+            There is no surviving without it. It shapes us. There is no motivated person who isn't engulfed by the embrace of progress. Be it any field- social, economical, spiritual or educational, there is Only one way with momentum- forward.
+        
+            And therefore we find ourselves at the epitome of curiosity as we intend to hear all about this from the masters of it- our distinguished speakers.</span>
+            </div>
+        </center>
+        <center> <h1 data-aos="fade-up">About <font color="#e62b1e">TED</font></h1></center>
+        <hr class="hrabout">
+        <center>
+            <div class="data1" data-aos="fade-up" >
+                <span style="color:white">
+                        TED is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks (18 minutes or less). TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to business to global issues — in more than 100 languages. Meanwhile, independently run TEDx events help share ideas in communities around the world. TED is a nonpartisan nonprofit devoted to spreading ideas, usually in the form of short, powerful talks. EDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group.</span></div></center> 
+                    
+                </span>
+            </div>
+        </center>
+</div>
+
+
+<div class="sponser">
+        <center><h1 data-aos="fade-up">Partners<font color="#e62b1e"> &</font> Sponsors</h1></center>
+        <hr class="hrabout">
+
+
+<div class="spongrid">
+    <div class="img1">
+            <img data-aos="fade-up" src="img/Bird-Vision-Logo.png" alt="" height="100px;">
+    </div>
+<div class="img2">
+        <img data-aos="fade-up" src="img/data.png" alt="" height="100px;">
+</div>
+</div>
+
+</div>
+<br>
+<br>
+
+
+<div class="joingrid">
+    <div class="joinimg">
+            <img src="join_us.jpeg" data-aos="fade-up"  style="opacity:1.4;" alt="Join us"> 
+    </div>
+    <div class="btnn">
+           <button data-aos="fade-up"><a href="http://bit.ly/jointedxmitaoe">Join Us</a></button><br><br><br>
+           <button data-aos="fade-up"><a href="team.html">Team</a></button>
+    </div>
+</div>
+
+
+
+
+
+
+    
+      <div class="line">
+            <!-- <p>This is Event by MITAOE</p> -->
+        </div><br>
+
+<br>
+<div class="foo">
+        <div class="fgrid">
+            <div class="itm1" >
+                <h3 style="color:white" data-aos="fade-up">Important Link</h3>
+                <a >Call for Speaker</a><br><br>
+               <a href="http://bit.ly/jointedxmitaoe">Call for Volunteer</a><br><br>
+               <a>Call for Sponsors</a>
+            </div>
+            <div class="itm2">
+                <div class="bt">
+                    <h1><button ><a style="color:white" href="mailto: tedx@mitaoe.ac.in">Contact Us</a></button></h1>
+                </div>
+    
+                <div class="p" >
+        
+           
+                    	<ul>
+                        <li ><a href="https://bit.ly/tedxmitaoefb"><i class="fa fa-facebook" id="fac"></i></a></li>
+                        <li><a href="https://bit.ly/tedxmitaoetwitter"><i class="fa fa-twitter" id="twi"></i></a></li>
+                    	 <li><a href="https://bit.ly/tedxmitaoeinsta"><i class="fa fa-instagram" id="inst"></i></a></li>
+	     </ul>
+                    
+                    
+                
+                </div>
+            </div>
+        </div>
+        <br><br>    
+    </div>
+    
+    
+
+
+      
+    <div class="loader ">
+        <img src="loading-animation-800.gif" alt="">
+    </div>
+    
+    <script>
+    window.addEventListener("load",function(){
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden";
+    
+    })
+    </script>
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="vendor/TweenMax.min.js"></script>
+<script src="vendor/ScrollToPlugin.min.js"></script>
+<script src="vendor/EaselPlugin.min.js"></script>
+<script src="animate-scroll.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+
+<script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+          var elems = document.querySelectorAll('.slider');
+          var instances = M.Slider.init(elems, options);
+        });
+      
+        // Or with jQuery
+      
+        $(document).ready(function(){
+          $('.slider').slider();
+        });
+        </script>
+      
+
+<script>
+$(document).ready(function(){
+  $('#sidenav-2').sidenav({ edge: 'right' });
+  $('.materialboxed').materialbox();
+  $('.parallax').parallax();
+  $('.tabs').tabs();
+  $('.datepicker').datepicker();
+
+});
+</script>
+<script>
+$(document).ready(function(){
+$('.sidenav').sidenav();
+  $('#sidenav-1').sidenav({ edge: 'left' });
+  $('#sidenav-2').sidenav({ edge: 'right' });
+});
+
+
+</script>
+
+</body>
+
+
+</html>
