@@ -1,0 +1,659 @@
+
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEDx MITAOE</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="typed.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<meta name=" theme-color" content="#000">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+         
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+ <!--Import Google Icon Font-->
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!--Import materialize.css-->
+ <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+<!--Let browser know website is optimized for mobile-->
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+    </head>
+
+    <style>
+        
+    html{
+       scroll-behavior: smooth;
+   } 
+ 
+    body{
+    background: black;
+    color: white;
+    
+    }
+
+.loader{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:black;
+}
+
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+.loader > img{
+    width: 1000px;
+}
+@keyframes fadeOut{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.hrabout{
+    border-bottom: 2px solid #e62b1e;
+    width: 60px;;
+}
+
+
+.data{
+    /* font-family: 'Roboto', sans-serif; */
+
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+    width:800px;
+}
+.data1{
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+    width:800px;
+    height:110px;
+}
+.foot{
+    border: 0.5px solid black;
+}
+.spngrid{
+    display: grid; 
+    grid-template-columns: auto auto;
+    margin-left: 230px;
+}
+.teamgrid{
+    display: grid; 
+    grid-template-columns: auto auto auto ;
+    grid-gap: 60px;
+    margin-left: 170px;
+}
+.socialgrid i{
+    font-size: 24px;
+}
+
+.socialgrid i:hover{
+    color:red;
+}
+.webteam{
+    display: grid; 
+    grid-template-columns: auto auto auto ;
+    grid-gap: 60px;
+    margin-left: 160px;
+}
+
+
+.foogrid .item2 h6{
+    color: gray;
+}
+
+.line{
+    background: #e62b1e;
+    height: 5px;
+    border-bottom-right-radius:100px; 
+}
+
+.foogrid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* .p ul{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 0px;
+
+} */
+.p ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.p ul li a{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration: none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    transition: .5s;
+    background: linear-gradient(0deg,#ddd,#fff);
+}
+
+.p ul li a:hover{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.p ul li a .fa{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: red;
+    border-radius: 50%;
+    line-height: calc(50px - 6px);
+    font-size: 20px;
+    color: #262626;
+    transform: .5s;
+
+}
+
+.p ul li a #fac{
+background:#3b5998;
+color:white;
+}
+
+.p ul li a #fac:hover{
+background:#e62b1e;
+color:#3b5998;
+}
+
+.p ul li a #twi{
+background:#1da1f2;
+color:white;
+}
+
+.p ul li a #twi:hover{
+background:#e62b1e;
+color:#1da1f2;
+}
+
+
+.p ul li a #inst{
+background:#c32aa3;
+color:white;
+}
+
+.p ul li a #inst:hover{
+background:#e62b1e;
+color:#c32aa3;
+}
+
+
+
+.name h3{
+    color: white;
+}
+
+.pp a{
+    float:right;
+    color: black;
+}
+/* .teamimg{
+        transition: transform .2s;
+    }
+    .name:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  /* -webkit-transform: scale(1.5); /* Safari 3-8 */
+  /* transform: scale(1.5); 
+} */ 
+
+@media screen and (max-width:670px){
+.brand-logo img{
+    height: 100px;
+}
+
+
+.data{
+    width:450px;
+}
+.data1{
+  
+    width:450px;
+}
+
+
+
+
+.name{
+        transition: none;
+}
+    .spngrid{
+        display: grid; 
+    grid-template-columns: auto;
+    margin-left: 60px;
+    grid-gap: 60px;
+    }
+    .img1{
+        margin-left: 0px;
+      
+    }
+
+   
+    .img3{
+        margin-left: 40px;
+    }
+    .teamgrid{
+        display: grid;
+        grid-template-columns: auto;
+    grid-gap: 60px;
+    margin-left: 120px;
+    }
+    .webteam{
+    display: grid; 
+    grid-template-columns: auto;
+    grid-gap: 60px;
+    margin-left: 120px;
+}
+.foogrid{
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 80px;
+}
+
+.nav ul li a{
+    color:white;
+}
+
+}
+.sidenav{
+    background: black;
+    color: white;
+}
+.sidenav ul li a{
+    color: white;
+}
+a .material-icons{
+   margin-left:1320px;
+   font-size:38px;
+}
+.nav{
+    position:absolute;
+    
+}
+.nav ul li{
+    position:absolute;
+    margin-top:0px;
+    display:inline-block;
+}
+.nav ul li img{
+    margin-left:50px;
+    margin-top:8px;
+}
+
+.nav ul li a .material-icons{
+    color: red;
+}
+
+#sidenav-2 a{
+    color:white;
+    font-size:19px;
+}
+
+
+.contitle button{
+    color:white;
+    background:black;
+    border:black;
+    border-radius:10px;
+}
+.contitle button:hover{
+    background:red;
+    color:white;
+}
+.item1{
+    margin-left:100px;
+    margin-top:20px;
+}
+.item2{
+    margin-left: 80px;
+}
+.fa fa-facebook{
+    color:red;
+}
+
+.item1 a:hover{
+    color:white;
+    cursor:pointer;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 0%;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.column2
+{
+    background-color:black;
+    height: 300px;
+
+}
+.buttton
+{
+margin-left:70% ;
+
+
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.butt {
+ 
+    background-color: black;
+  color:white;
+  width: 120px;
+  height: 50px;
+  border: 2px solid white; /* Green */
+    font-size: 18px;
+}
+
+.butt a{
+    color:white;
+}
+
+
+.butto{
+    display:inline-block;
+}
+
+.logo{
+    position: absolute;
+    margin-left: 50px;
+}
+.right{
+    margin-right: 20px;
+}
+.teamimg img{
+    height:170px;
+    width:180px;
+    border-radius:50%;
+}
+.teamimg{
+    filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .12s ease-in-out;
+}
+.teamimg:hover{
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.06);
+}
+
+    </style>
+<body>
+<div class="team wow fadeInUp" id="team">
+    <div class="teamtitle">
+        <center><h2>Meet the <font color="#e62b1e" data-aos="fade-up-right">Team</font></h2></center>
+        <hr class="hrabout">
+    </div>
+<br><br>
+<div class="team">
+    <div class="teamgrid">
+        <div class="first" data-aos="zoom-in-down">
+
+<div class="teamimg">
+<img class="amey" src="img/amey.jpeg">
+</div>
+<div class="name">
+    <h4>Amey Nerkar</h4>
+    <h6>Organizer</h6>
+    <br>
+    <div class="social">
+        <div class="socialgrid">
+                <a href="https://www.facebook.com/i.AMEY.iNVENT"> <i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/in/ameyinvent/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                <a href="https://twitter.com/ameyinvent"> <i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+        </div>
+    </div>
+</div>
+        </div>
+<div class="secound" data-aos="zoom-in-down">
+    <div class="teamimg">
+<img src="img/nm.jpeg">
+</div>
+        <div class="name">
+                <h4>Namrata More</h4>
+                <h6> Operations</h6>
+                <br>
+                <div class="social">
+                    <div class="socialgrid">
+                            <a href="https://www.facebook.com/nmrtmore"> <i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/namratamore-nm/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a href="https://twitter.com/namratamore_nm"> <i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+</div>
+
+<div class="third" data-aos="zoom-in-down">
+    <div class="teamimg">
+<img src="img/maynk.JPG">
+</div>
+        <div class="name">
+                <h4>Mayank Chourasia</h4>
+                <h6>Volunteer Coordinator</h6>
+                <br>
+                <div class="social">
+                    <div class="socialgrid">
+                            <a href="https://www.facebook.com/mayank.chourasia2"> <i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/mayank-chourasia-38421a134/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a href="https://twitter.com/chourasiamayank"> <i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+</div>
+
+
+    </div>
+<br><br><br>
+<div class="web">
+    <div class="teamtitle">
+        <center><h2><font color="#e62b1e" data-aos="fade-up-right">Web Design</font> Team</h2></center>
+        <hr class="hrabout">
+    </div><br><br>
+</div>
+<div class="webteam">
+    <div class="fourth" data-aos="zoom-in-down">
+            <div class="teamimg">
+<img src="kkp.jpg">
+</div>
+        <div class="name">
+                <h4>Kedar Parsewar</h4>
+                <h6>Developer</h6>
+                <br>
+                <div class="social">
+                    <div class="socialgrid">
+                            <a href="https://github.com/kedar1023"> <i class="fa fa-github" aria-hidden="true"></i>&nbsp;&nbsp;
+                            <a href="https://in.linkedin.com/in/kedar-parsewar-b6a379180 "> <i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a href="https://twitter.com/kedar1023"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+</div>
+<div class="five" data-aos="zoom-in-down">
+              <div class="teamimg">
+<img src="sarvesh.jpg">
+</div>
+        <div class="name">
+                <h4>Sarvesh Pathak</h4>
+                <h6>Developer</h6>
+                <br>
+                <div class="social">
+                    <div class="socialgrid">
+                            <a href="https://github.com/sarveshpathak139"><i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/sarvesh-pathak-0a0491155/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a href="https://twitter.com/sarveshpathak88"> <i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+</div>
+
+<div class="five" data-aos="zoom-in-down">
+              <div class="teamimg">
+<img src="pav.jpg"  class=" lazyload">
+</div>
+        <div class="name">
+                <h4>Pavan Patil</h4>
+                <h6>Developer</h6>
+                <br>
+                <div class="social">
+                    <div class="socialgrid">
+                            <a href="https://github.com/pavanpatil1"> <i class="fa fa-github" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a href="https://www.linkedin.com/in/pavanpatil1/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                            <a href="https://twitter.com/Pavan48081821"> <i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    </div>
+                </div>
+            </div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+<div class="loader ">
+    <img src="loading-animation-800.gif" alt="">
+</div>
+
+<script>
+window.addEventListener("load",function(){
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden";
+
+})
+</script>
+
+
+<script type="text/javascript">
+
+    var loader;
+    function loadNow(opacity){
+      if(opacity <= 0){
+        displayContent();
+      }
+      else{
+        loader.style.opacity = opacity;
+        window.setTimeout(function(){
+          loadNow(opacity - 0.05)
+    
+        },100);
+      }
+    } 
+    
+    function displayContent(){
+      loader.style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    }
+    document.addEventListener("DOMContentLoaded",function(){
+       
+       loader = document.getElementById('loader');
+       loadNow(1);
+    
+    });
+    </script>
+  
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+<script src="lazysizes.min.js" async></script>
+<script src="vendor/TweenMax.min.js"></script>
+<script src="vendor/ScrollToPlugin.min.js"></script>
+<script src="vendor/EaselPlugin.min.js"></script>
+<script src="animate-scroll.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+
+<script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, options);
+          });
+        
+          // Or with jQuery
+        
+          $(document).ready(function(){
+            $('.slider').slider();
+          });
+          </script>
+        
+
+<script>
+$(document).ready(function(){
+    $('#sidenav-2').sidenav({ edge: 'right' });
+    $('.materialboxed').materialbox();
+    $('.parallax').parallax();
+    $('.tabs').tabs();
+    $('.datepicker').datepicker();
+
+});
+</script>
+<script>
+$(document).ready(function(){
+  $('.sidenav').sidenav();
+	$('#sidenav-1').sidenav({ edge: 'left' });
+	$('#sidenav-2').sidenav({ edge: 'right' });
+});
+
+
+</script>
+
+</body>
+</html>
