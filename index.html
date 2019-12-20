@@ -41,7 +41,8 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px)" href="css/main.css" />
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/tooplate-style.css">
     <script src="typed.js"></script>
@@ -121,7 +122,7 @@
     
     .joinimg img {
         height: 300px;
-        width: 700px;
+        width: 600px;
     }
     
     .btnn {
@@ -352,6 +353,120 @@
     #myBtn:hover {
         background-color: black;
     }
+
+
+    
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: #000000;
+    grid-gap: 0px;
+}
+.footer .itm1 h3{
+    font-size: 24px;
+    color: red;
+}
+.footer .itm1 a{
+    text-decoration: none;
+    color: white;
+}
+/* .itm1{
+    margin-left: 120px;
+} */
+.itm2 .icon-bar{
+    margin-top: 40px;
+}
+
+
+.icon-bar{
+    font-size: 37px;
+}
+
+.icon-bar .facebook{
+    color: white; 
+     
+}
+
+.icon-bar .facebook:hover{
+    color:royalblue;
+    font-size: 30px;  
+}
+.icon-bar .twitter:hover{
+    color:royalblue;
+    font-size: 30px;  
+}
+.icon-bar .google:hover{
+    color:orangered;
+    font-size: 30px;  
+}
+.icon-bar .twitter{
+    color: white;  
+}
+
+.footer h3{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+   
+}
+.foo{
+    background: #000000;
+}
+.icon-bar .google{
+    color: white;  
+
+}
+
+.footer .itm3 h3{
+    font-size: 24px;
+    color: red;
+}
+
+.footer a{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+}
+
+.legal span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 670px) {
+ 
+    .footer{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 30px;
+        margin-left: 10px;
+    } 
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .footer{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 30px;
+        margin-left: 10px;
+    } 
+}
+
+
+
+.timer{
+    display: inline-block;
+    font-size: 47px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.names{
+    font-size: 19px;
+}
+
 </style>
 
 <body onload="typeWriter()">
@@ -372,9 +487,10 @@
                 <br><br>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#aboutus">About</a></li>
+                <li><a href="sponsor.html">Sponsors</a></li>
                 <li><a href="team.html">Team</a></li>
-                <li><a href="http://bit.ly/tedxmitaoecfp">Call for Proposals</a>
-                    <li><a href="http://bit.ly/jointedxmitaoe">Call for Volunteers</a></li>
+                <li><a href="http://bit.ly/tedxmitaoecfp">Call for Speaker</a>
+                   
                     <li><a href="mailto: tedx@mitaoe.ac.in">Contact Us</a></li>
             </ul>
 
@@ -513,24 +629,6 @@
     </div>
 
 
-    <div class="sponser">
-        <center>
-            <h1 data-aos="fade-up">Partners
-                <font color="#e62b1e"> &</font> Sponsors</h1>
-        </center>
-        <hr class="hrabout">
-
-
-        <div class="spongrid">
-            <div class="img1">
-                <img data-aos="fade-up" src="img/Bird-Vision-Logo.png" alt="" height="100px;">
-            </div>
-            <div class="img2">
-                <img data-aos="fade-up" src="img/Final_Natki_Tare.png" alt="" height="100px;">
-            </div>
-        </div>
-
-    </div>
     <br>
     <br>
 
@@ -548,6 +646,76 @@
 
 
 
+    <br><br>
+    <!-- Count Down for Event Start Here -->
+    
+    <center>
+    <!-- Count Down for Event Stop Here -->
+    <div  class="timer">
+      
+      <!-- <span id="demo"></span> -->
+      <div style="display:inline-block" data-sal="zoom-in" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000">
+        <span id="day"></span>&nbsp;&nbsp;
+      </div>
+      <div style="display:inline-block" data-sal="zoom-out" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000">
+        <span id="hour"></span>&nbsp;&nbsp;
+      </div>
+      <div style="display:inline-block" data-sal="zoom-in" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000">  
+      <span id="min"></span>&nbsp;&nbsp;
+      </div>
+      <div style="display:inline-block" data-sal="zoom-out" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000"> 
+      <span id="sec"></span>
+      </div>
+    
+    <div class="names">
+      <span>Days</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <span>Hours</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span>Minutes</span>&nbsp;&nbsp;&nbsp;&nbsp;
+      <span>Second</span>
+    </div>
+    </div>
+    </center>
+    
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Jan 18, 2020 10:00:00").getTime();
+      
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      
+        // Get today's date and time
+        var now = new Date().getTime();
+          
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+          
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+        // Output the result in an element with id="demo"
+        // document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        // + minutes + "m " + seconds + "s ";
+    
+    
+        document.getElementById("day").innerHTML = days;
+        document.getElementById("hour").innerHTML = hours;
+        document.getElementById("min").innerHTML = minutes;
+        document.getElementById("sec").innerHTML = seconds;
+          
+        // If the count down is over, write some text 
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+      </script>
+      
+      
+    <!-- Count Down For Event stop Here -->
+    
 
 
 
@@ -556,35 +724,51 @@
     </div><br>
 
     <br>
+
+
+<!-- Footer Code is End Here -->
+<center>
     <div class="foo">
-        <div class="fgrid">
-            <div class="itm1">
-                <h3 style="color:white" data-aos="fade-up">Important Link</h3>
-                <a href="http://bit.ly/tedxmitaoecfp">Call for Speaker</a><br><br>
-                <a href="http://bit.ly/jointedxmitaoe">Call for Volunteer</a><br><br>
-                <a>Call for Sponsors</a>
+    <br><br>
+      <div class="footer">
+        <div class="itm1">
+       
+            <div class="venue">
+            <h3 data-sal="slide-down" data-sal-delay="100" data-sal-easing="ease-out-bounce" data-sal-duration="2000" >venue</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120977.92764248558!2d73.80162079413539!3d18.63883943888814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b84992d04bbd%3A0x9f1c44fb853ba461!2sAuto%20Cluster%20Exhibition%20Center!5e0!3m2!1sen!2sin!4v1576587441500!5m2!1sen!2sin" width="80%" height="130" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
-            <div class="itm2">
-                <div class="bt">
-                    <h1><button><a style="color:white" href="mailto: tedx@mitaoe.ac.in">Contact Us</a></button></h1>
-                </div>
-
-                <div class="p">
-
-
-                    <ul>
-                        <li><a href="https://bit.ly/tedxmitaoefb"><i class="fa fa-facebook" id="fac"></i></a></li>
-                        <li><a href="https://bit.ly/tedxmitaoetwitter"><i class="fa fa-twitter" id="twi"></i></a></li>
-                        <li><a href="https://bit.ly/tedxmitaoeinsta"><i class="fa fa-instagram" id="inst"></i></a></li>
-                    </ul>
-
-
-
-                </div>
-            </div>
+    
+          </div>
+      <div class="itm1">
+        <h3 data-sal="slide-down" data-sal-delay="100" data-sal-easing="ease-out-bounce" data-sal-duration="1000" style="color:red">Important-Links</h3>
+    
+        <div data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease-out-bounce" data-sal-duration="2000">
+          <span><a href="http://bit.ly/tedxmitaoecfp">Call for Speakers</a></span><br><br>
         </div>
-        <br><br>
+    
+    
+      </div>
+     
+      <div class="itm3">
+        <h3 data-sal="slide-down" data-sal-delay="100" data-sal-easing="ease-out-bounce" data-sal-duration="2000" >Contact</h3>
+        <div data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="2000">
+          <a href="">tedx@mitaoe.ac.in</a>
+        </div>
+      </div>
     </div>
+    <br><br><br><br>
+    <div class="legal">
+      
+      <div data-sal="zoom-in" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="2000">
+        <center><span>This independent TEDx event is operated under license from TED</span></center><br>
+      </div>
+      <div data-sal="slide-down" data-sal-delay="100" data-sal-easing="ease-out-bounce" data-sal-duration="2000">
+        <center><span>&copy; 2019 <font color="red">Tedx</font>MITAOE</span></center><br>
+      </div>
+      
+    </div>
+    </div>
+    </center>
 
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:30px"></i></button>
