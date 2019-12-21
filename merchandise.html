@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="TEDxMITAOE TEDx MITAOE EVENT">
+    <meta name="keywords" content="TEDx,TEDxMITAOE,TEDTALKS,TEDXTALKS,Kedar1023,TEDxMITAOE,TEDxMIT,MITAOE,TEDx">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="author" content="TEDxMITAOE">
+
+    <title>TEDx MITAOE</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta name=" theme-color" content="#000">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 320px) and (max-device-width: 500px)" href="css/mobile.css" />
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 501px)" href="css/main.css" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+    <script src="typed.js"></script>
+    <!-- MAIN CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js">
+
+</head>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: black;
+    }
+
+    .material-icons {
+        font-size: 34px;
+    }
+
+    .logo {
+        height: 80px;
+        width: 300px;
+        margin-left: 100px;
+    }
+
+    .pp {
+        margin-right: 40px;
+    }
+
+    .hrabout {
+        border-bottom: 2px solid white;
+        width: 60px;
+        ;
+    }
+
+    .data {
+        width: 80%;
+        margin-top: 40px;
+        margin-left: 10%;
+        text-align: justify;
+        text-justify: inter-word;
+        height: 200px;
+    }
+
+    .data1 {
+        width: 80%;
+        margin-top: 40px;
+        margin-left: 10%;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    .bulb {
+        height: 210px;
+        width: 650px;
+    }
+
+    .spongrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 250px;
+    }
+
+    .line {
+        background: red;
+        height: 5px;
+        border-bottom-right-radius: 100px;
+    }
+
+    .joingrid {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .joinimg img {
+        height: 300px;
+        width: 600px;
+    }
+
+    .btnn {
+        margin-top: 70px;
+    }
+
+    .btnn button {
+        background: black;
+        color: white;
+        border: 2px solid red;
+        width: 140px;
+        height: 50px;
+    }
+
+    .btnn a {
+        color: white;
+    }
+
+    .fgrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-left: 100px;
+    }
+
+    .itm2 {
+        margin-left: 300px;
+    }
+
+    .loader {
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+    }
+
+    .loader.hidden {
+        animation: fadeOut 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .loader>img {
+        width: 1000px;
+    }
+
+    @keyframes fadeOut {
+        100% {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    .p ul li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .p ul li a {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: block;
+        text-align: center;
+        margin: 0 10px;
+        border-radius: 50%;
+        padding: 6px;
+        box-sizing: border-box;
+        text-decoration: none;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        transition: .5s;
+        background: linear-gradient(0deg, #ddd, #fff);
+    }
+
+    .p ul li a:hover {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .p ul li a .fa {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: red;
+        border-radius: 50%;
+        line-height: calc(50px - 6px);
+        font-size: 20px;
+        color: #262626;
+        transform: .5s;
+    }
+
+    .p ul li a #fac {
+        background: #3b5998;
+        color: white;
+    }
+
+    .p ul li a #fac:hover {
+        background: #e62b1e;
+        color: #3b5998;
+    }
+
+    .p ul li a #twi {
+        background: #1da1f2;
+        color: white;
+    }
+
+    .p ul li a #twi:hover {
+        background: #e62b1e;
+        color: #1da1f2;
+    }
+
+    .p ul li a #inst {
+        background: #c32aa3;
+        color: white;
+    }
+
+    .p ul li a #inst:hover {
+        background: #e62b1e;
+        color: white;
+    }
+
+    .itm2 button {
+        color: white;
+        background: black;
+        border: black;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    #sidenav-2 {
+        background: black;
+        color: white;
+    }
+
+    #sidenav-2 a {
+        color: white;
+    }
+
+
+
+    @media only screen and (max-width: 600px) {
+        .data {
+            width: 340px;
+        }
+        .data1 {
+            width: 340px;
+        }
+        .fgrid {
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .itm2 {
+            margin-left: 0px;
+        }
+        .spongrid {
+            display: grid;
+            grid-template-columns: auto;
+            margin-left: 30px;
+            grid-gap: 60px;
+        }
+        .joingrid {
+            display: grid;
+        }
+        .joinimg img {
+            width: 200px;
+        }
+        .data {
+            height: 230px;
+        }
+        .logo {
+            height: 80px;
+            width: 260px;
+            margin-left: 50px;
+        }
+        .pp {
+            margin-right: 20px;
+        }
+        .bulb {
+            height: 210px;
+            width: 340px;
+            margin-top: 80px;
+        }
+        .itm2 p {
+            text-right: 133px;
+        }
+
+        .medi{
+            margin-top:100px;
+        }
+    }
+
+    .icon-bar {
+        position: fixed;
+    }
+
+    .icon-bar a {
+        display: block;
+        padding: 16px;
+        transition: all 0.3s ease;
+        color: white;
+        font-size: 20px;
+    }
+    .icon-bar a i:hover {
+        font-size:40px;
+
+    }
+    #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    #myBtn:hover {
+        background-color: black;
+    }
+
+
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background: #000000;
+    grid-gap: 0px;
+}
+.footer .itm1 h3{
+    font-size: 24px;
+    color: red;
+}
+.footer .itm1 a{
+    text-decoration: none;
+    color: white;
+}
+/* .itm1{
+    margin-left: 120px;
+} */
+.itm2 .icon-bar{
+    margin-top: 40px;
+}
+
+
+.icon-bar{
+    font-size: 37px;
+}
+
+.icon-bar .facebook{
+    color: white;
+
+}
+
+.icon-bar .facebook:hover{
+    color:royalblue;
+    font-size: 30px;
+}
+.icon-bar .twitter:hover{
+    color:royalblue;
+    font-size: 30px;
+}
+.icon-bar .google:hover{
+    color:orangered;
+    font-size: 30px;
+}
+.icon-bar .twitter{
+    color: white;
+}
+
+.footer h3{
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+.foo{
+    background: #000000;
+}
+.icon-bar .google{
+    color: white;
+
+}
+
+.footer .itm3 h3{
+    font-size: 24px;
+    color: red;
+}
+
+.footer a{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+}
+
+.legal span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 670px) {
+
+    .footer{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 30px;
+        margin-left: 10px;
+    }
+
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .footer{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 30px;
+        margin-left: 10px;
+    }
+}
+
+
+
+
+.timer{
+    display: inline-block;
+    font-size: 47px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.names{
+    font-size: 19px;
+}
+
+</style>
+
+<body onload="typeWriter()">
+    <br>
+    <div class="nav">
+        <ul>
+
+            <li class="pp"><a href="#" data-target="sidenav-2" class="right sidenav-trigger show-on-medium-and-up"><i class="material-icons" style="color:red;">menu</i></a></li>
+
+            <li>
+                <a href="index.html"><img class="logo" src="balck aside logo.png" class="logo"></a>
+            </li>
+
+            <!-- RIGHT SIDEBAR	 -->
+            <ul id="sidenav-2" class="sidenav">
+                <br>
+                <br>
+                <br><br>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="sponsor.html">Sponsors</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="http://bit.ly/tedxmitaoecfp">Call for Speaker</a>
+
+                    <li><a href="mailto: tedx@mitaoe.ac.in">Contact Us</a></li>
+            </ul>
+
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div class="sponser">
+            <center>    <img src="img/tshirt.png" alt="" ></center>
+            <center>
+              <div class="btnn">
+                  <button><a href="http://bit.ly/tedxmitaoetshirt">Buy Now</a></button><br><br><br>
+              </div>
+            </center>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up" style="font-size:30px"></i></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <div class="loader ">
+        <img src="loading-animation-800.gif" alt="">
+    </div>
+
+    <script>
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+
+        })
+    </script>
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="vendor/TweenMax.min.js"></script>
+    <script src="vendor/ScrollToPlugin.min.js"></script>
+    <script src="vendor/EaselPlugin.min.js"></script>
+    <script src="animate-scroll.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.slider');
+            var instances = M.Slider.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function() {
+            $('.slider').slider();
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('#sidenav-2').sidenav({
+                edge: 'right'
+            });
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker();
+
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+            $('#sidenav-1').sidenav({
+                edge: 'left'
+            });
+            $('#sidenav-2').sidenav({
+                edge: 'right'
+            });
+        });
+    </script>
+
+</body>
+
+
+</html>
