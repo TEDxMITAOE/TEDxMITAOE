@@ -353,8 +353,6 @@
     #myBtn:hover {
         background-color: black;
     }
-
-
     
 .footer{
     display: grid;
@@ -376,17 +374,13 @@
 .itm2 .icon-bar{
     margin-top: 40px;
 }
-
-
 .icon-bar{
     font-size: 37px;
 }
-
 .icon-bar .facebook{
     color: white; 
      
 }
-
 .icon-bar .facebook:hover{
     color:royalblue;
     font-size: 30px;  
@@ -402,7 +396,6 @@
 .icon-bar .twitter{
     color: white;  
 }
-
 .footer h3{
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
    
@@ -412,27 +405,27 @@
 }
 .icon-bar .google{
     color: white;  
-
 }
-
 .footer .itm3 h3{
     font-size: 24px;
     color: red;
 }
-
 .footer a{
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 19px;
 }
-
 .legal span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
     color: white;
     font-size: 15px;
 }
-
+.pq{
+    position: fixed;
+}
+.vid{
+    margin-left: 160px;
+}
 @media screen and (max-width: 670px) {
  
     .footer{
@@ -441,10 +434,16 @@
         grid-gap: 30px;
         margin-left: 10px;
     } 
-
-
+    .pq{
+    position: absolute;
 }
-
+.vid{
+    margin-top: 140px;
+}
+.vid{
+    margin-left: 10px;
+}
+}
 @media screen and (min-width: 320px) and (max-width: 480px){
     .footer{
         display: grid;
@@ -453,21 +452,15 @@
         margin-left: 10px;
     } 
 }
-
-
-
-
 .timer{
     display: inline-block;
     font-size: 47px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: white;
 }
-
 .names{
     font-size: 19px;
 }
-
 </style>
 
 <body onload="typeWriter()">
@@ -477,7 +470,7 @@
 
             <li class="pp"><a href="#" data-target="sidenav-2" class="right sidenav-trigger show-on-medium-and-up"><i class="material-icons" style="color:red;">menu</i></a></li>
 
-            <li>
+            <li class="pq">
                 <a href="index.html"><img class="logo" src="balck aside logo.png" class="logo"></a>
             </li>
 
@@ -508,7 +501,7 @@
 
     <div class="sponser">
         <center>
-            <h1 data-aos="fade-up"> 
+            <h1 class="vid" data-aos="fade-up"> 
                 <font color="#e62b1e">Videography</font> &nbsp;Partner </h1>
         </center>
         <hr class="hrabout">
@@ -564,12 +557,10 @@
     <script>
         //Get the button
         var mybutton = document.getElementById("myBtn");
-
         // When the user scrolls down 20px from the top of the document, show the button
         window.onscroll = function() {
             scrollFunction()
         };
-
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
@@ -577,7 +568,6 @@
                 mybutton.style.display = "none";
             }
         }
-
         // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
             document.body.scrollTop = 0;
@@ -594,7 +584,6 @@
         window.addEventListener("load", function() {
             const loader = document.querySelector(".loader");
             loader.className += " hidden";
-
         })
     </script>
 
@@ -620,9 +609,7 @@
             var elems = document.querySelectorAll('.slider');
             var instances = M.Slider.init(elems, options);
         });
-
         // Or with jQuery
-
         $(document).ready(function() {
             $('.slider').slider();
         });
@@ -638,7 +625,6 @@
             $('.parallax').parallax();
             $('.tabs').tabs();
             $('.datepicker').datepicker();
-
         });
     </script>
     <script>
