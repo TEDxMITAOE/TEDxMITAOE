@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+	<!--- BASIC PAGE NEEDS
+    ================================================== -->
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#000000">
+	<title>TEDxPICT</title>
+	<meta name="description"
+		content=" We at TEDxPICT work for the sole purpose of bringing together an event that prioritises the sharing of ideas, stories and innovations that benefit the world at large. The sharing of ideas is crucial for the survival of a society that promotes progress, and TEDxPICT plays its part by providing various speakers a platform for the same. Encouraging free thought on issues many barely speak about, shedding light on hidden stories and bringing forth a surge of inspiration, energy and enthusiasm is what we're known for.">
+	<meta name="author" content="">
+	<meta name="keywords" content="TEDxPICT,TEDx,TEDxPune,TEDxMumbai,TEdxIndia,TEDx speaker, TEDx event,Talks, Themes, Speakers, Technology, Entertainment, Design">
+	<meta name="og:title" property="og:title" content="TEDxPICT">
+	<meta name="og:description" property="og:description"
+		content="We at TEDxPICT work for the sole purpose of bringing together an event that prioritises the sharing of ideas, stories and innovations that benefit the world at large. The sharing of ideas is crucial for the survival of a society that promotes progress, and TEDxPICT plays its part by providing various speakers a platform for the same. Encouraging free thought on issues many barely speak about, shedding light on hidden stories and bringing forth a surge of inspiration, energy and enthusiasm is what we're known for.">
+	<meta property="og:url" content="https://www.tedxpict.com/" />
+
+	<meta name="robots" content="index, follow">
+
+	<!-- mobile specific metas
+    ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS
+    ================================================== -->
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/vendor.css">
+	<link rel="stylesheet" href="css/main.css">
+
+
+
+
+	<!-- script
+    ================================================== -->
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/8784311ea1.js"></script>
+
+	<link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/lightslider.js"></script>
+
+
+	<!-- logo
+    ================================================== -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+	<!-- preloader
+    ================================================== -->
+	<div id="preloader">
+		<div id="loader">
+			<div class="line-scale-pulse-out">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- header
+    ================================================== -->
+	<header class="s-header">
+
+		<div class="header-logo">
+			<a class="site-logo" href="index.html">
+				<img src="images/logo.png" alt="Homepage" width="%">
+			</a>
+		</div>
+
+		<nav class="header-nav">
+
+			<a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
+
+			<div class="header-nav__content">
+				<h3>Navigation</h3>
+
+				<ul class="header-nav__list">
+					<li class="current"><a class="smoothscroll" href="#home" title="home">HOME</a></li>
+					<li><a class="smoothscroll" href="#about" title="about">ABOUT US</a></li>
+					<li><a class="smoothscroll" href="#services" title="services">BLOGS</a></li>
+					<li><a class="smoothscroll" href="#works" title="works">PREVIOUS EVENTS</a></li>
+					<li><a class="smoothscroll" href="#speakers" title="works">PREVIOUS SPEAKERS</a></li>
+					<!--<li><a class="smoothscroll"  href="#clients" title="clients">PARTNERS</a></li>
+                    <li><a class="smoothscroll"  href="#team" title="clients">OUR TEAM</a></li>-->
+					<li><a class="smoothscroll" href="#contact" title="contact">CONTACT US</a></li>
+				</ul>
+
+
+				Developed by<br>
+				Web Team @ TEDxPICT<br>
+				Sanya Varghese<br>Shubham Mahajan<br><br>
+
+
+				<ul class="header-nav__social">
+          <li>
+    				<a href="https://facebook.com/tedxpict" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    			</li>
+    			<li>
+    				<a href="https://instagram.com/tedxpict" target="_blank"><i class="fab fa-instagram"></i></a>
+    			</li>
+    			<li>
+    				<a href="https://twitter.com/tedxpict?lang=en/" target="_blank"><i class="fab fa-twitter"></i></a>
+    			</li>
+    			<li>
+    				<a href="https://medium.com/@licensee" target="_blank"><i class="fab fa-medium-m"></i></a>
+    			</li>
+    			<li>
+    				<a href="https://www.flickr.com/photos/144385794@N03/" target="_blank"><i class="fab fa-flickr"></i></a>
+    			</li>
+				</ul>
+
+			</div> <!-- end header-nav__content -->
+
+		</nav> <!-- end header-nav -->
+
+		<a class="header-menu-toggle" href="#0">
+			<span class="header-menu-text"></span>
+			<span class="header-menu-icon" id="navbar"></span>
+		</a>
+		<script>
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function() {
+				var currentScrollPos = window.pageYOffset;
+				if (prevScrollpos > currentScrollPos) {
+					document.getElementById("navbar").style.top = "20px";
+				} else {
+					document.getElementById("navbar").style.top = "-70px";
+				}
+				prevScrollpos = currentScrollPos;
+			}
+		</script>
+
+	</header> <!-- end s-header -->
+
+
+	<!-- home
+    ================================================== -->
+	<section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+
+		<div class="overlay">
+		</div>
+		<div class="shadow-overlay"></div>
+
+
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
+		<div id="particles-js">
+
+			<div class="home-content">
+
+				<div class="row home-content__main">
+
+					<h3 class="h3-heading">WELCOME TO TEDXPICT</h3>
+
+					<h1>
+						We are passion made visible.
+					</h1>
+
+					<div class="home-content__buttons">
+						<a href="#services" class="smoothscroll btn btn--stroke">
+							blogs
+						</a>
+						<a href="#contact" class="smoothscroll btn btn--stroke">
+							contact us
+						</a>
+					</div>
+
+				</div>
+
+				<div class="home-content__scroll">
+					<a href="#about" class="scroll-link smoothscroll">
+						<span>Scroll Down</span>
+					</a>
+				</div>
+
+				<div class="home-content__line"></div>
+
+			</div> <!-- end home-content -->
+
+		</div>
+
+		<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+		<script src="js/res.js"></script>
+
+
+
+		<ul class="home-social">
+			<li>
+				<span>Facebook</span>
+				<a href="https://facebook.com/tedxpict" target="_blank"><i class="fab fa-facebook-f"></i></a>
+			</li>
+			<li>
+				<span>Instagram</span>
+				<a href="https://instagram.com/tedxpict" target="_blank"><i class="fab fa-instagram"></i></a>
+			</li>
+			<li>
+				<span>Twitter</span>
+				<a href="https://twitter.com/tedxpict?lang=en/" target="_blank"><i class="fab fa-twitter"></i></a>
+			</li>
+			<li>
+				<span>Medium</span>
+				<a href="https://medium.com/@licensee" target="_blank"><i class="fab fa-medium-m"></i></a>
+			</li>
+			<li>
+				<span>Flickr</span>
+				<a href="https://www.flickr.com/photos/144385794@N03/" target="_blank"><i class="fab fa-flickr"></i></a>
+			</li>
+
+		</ul>
+		<!-- end home-social -->
+
+	</section> <!-- end s-home -->
+
+
+	<!-- about
+    ================================================== -->
+	<section id='about' class="s-about">
+
+		<div class="row section-header has-bottom-sep" data-aos="fade-up">
+			<div class="col-full">
+				<h3 class="subhead subhead--dark">Hello There</h3>
+				<h1 class="display-1 display-1--light">We Are TEDxPICT</h1>
+			</div>
+		</div> <!-- end section-header -->
+
+		<div class="row about-desc" data-aos="fade-up">
+			<div class="col-full">
+				<p>
+					We at TEDxPICT work for the sole purpose of bringing together an event that prioritises the sharing of ideas, stories and innovations that benefit the world at large. The sharing of ideas is crucial for the survival of a society that
+					promotes progress, and TEDxPICT plays its part by providing various speakers a platform for the same. Encouraging free thought on issues many barely speak about, shedding light on hidden stories and bringing forth a surge of inspiration,
+					energy and enthusiasm is what we're known for.
+
+
+				</p>
+			</div>
+		</div> <!-- end about-desc -->
+
+
+		<div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+
+			<div class="col-block stats__col">
+				<div class="stats__count">3</div>
+				<h5>Years</h5>
+			</div>
+			<div class="col-block stats__col ">
+				<div class="stats__count">1631</div>
+				<h5>Instagram Followers</h5>
+			</div>
+			<div class="col-block stats__col">
+				<div class="stats__count">3382</div>
+				<h5>Facebook Followers</h5>
+			</div>
+
+			<div class="col-block stats__col">
+				<div class="stats__count">138890</div>
+				<h5>YouTube Views</h5>
+			</div>
+		</div> <!-- end about-stats -->
+
+
+		<div class="about__line"></div>
+
+		<div class="about-tedx">
+
+			<h4 style=color:#e62b1e>About TEDx, x = independently organized event</h4>
+			<p style="color: black">
+				In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and
+				connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to
+				certain rules and regulations.)</p>
+			<h4 style=color:#e62b1e>About TED</h4>
+			<p style="color: black">
+				TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the
+				world&#8217;s leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan
+				Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman.</p>
+			<p style="color: black">The annual TED Conference takes place each spring in Vancouver, British Columbia. TED&#8217;s media initiatives include TED.com, where new TED Talks are posted daily; the Open Translation Project, which provides
+				subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established the annual TED Prize, where exceptional individuals with a wish to change the world get help
+				translating their wishes into action; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to
+				amplify the impact of their remarkable projects and activities.</p>
+
+
+		</div>
+
+	</section> <!-- end s-about -->
+
+
+	<!-- services
+    ================================================== -->
+	<section id='services' class="s-services">
+
+		<div class="row section-header has-bottom-sep" data-aos="fade-up">
+			<div class="col-full">
+				<h2 style="color: #e62b1e">BLOGS</h2>
+				<h1 style=color: #404040>From Our Content Team</h1>
+			</div>
+		</div> <!-- end section-header -->
+
+		<div class="row services-list block-1-2 block-tab-full">
+			<div class="col-block service-item" data-aos="fade-up">
+				<div class="service-icon">
+					<i class="icon-pen"></i>
+				</div>
+				<div class="service-text">
+					<h3 class="h2">Home Away From Home</h3>
+					<p>"...we try to fly when we are only caterpillars.The distance from home makes you feel torn,craving the feeling of home. You want to scream and shout, but secretly you know this is a part of growing up..."
+						<a href="https://tedxpictblogs.wordpress.com/2019/08/25/home-away-from-home/" class="blogpost" target="_blank">
+							Click here to read the blog.
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-block service-item" data-aos="fade-up">
+				<div class="service-icon">
+					<i class="icon-pen"></i>
+				</div>
+				<div class="service-text">
+					<h3 class="h2">A blast from the past</h3>
+					<p>"Games trigger nostalgia even more strongly than toys because we invest more emotions in playing them—heightened feelings of competitiveness, frustration, joy, and pride. I could go on and on, but oh well."
+						<a href="https://tedxpictblogs.wordpress.com/2019/08/21/a-visit-from-the-past/" class="blogpost" target="_blank">
+							Click here to read the blog.
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="col-block service-item" data-aos="fade-up">
+				<div class="service-icon">
+					<i class="icon-pen"></i>
+				</div>
+				<div class="service-text">
+					<h3 class="h2">An Unholy Fear</h3>
+					<p>"Every new day, I cease to control my mind and get lost in the
+						fabricated realities it creates. Life seems to be a task, spiraling
+						out of our control with the tick of the clock. "
+						<a href="https://tedxpictblogs.wordpress.com/2019/08/05/an-unholy-fear/" class="blogpost" target="_blank">
+							Click here to read the blog.
+						</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-block service-item" data-aos="fade-up">
+				<div class="service-icon">
+					<i class="icon-pen"></i>
+				</div>
+				<div class="service-text">
+					<h3 class="h2">Football – on the rise in India</h3>
+					<p>"A game that has brought together billions of people, from diverse
+						backgrounds and heritage, to shout, scream, rejoice and cry ... Herein lies the
+						true beauty of the game.Billion hearts. One beat. Football."
+						<a href="https://tedxpictblogs.wordpress.com/2019/07/16/football-on-the-rise-in-india/" class="blogpost" target="_blank">
+							Click here to read the blog.
+						</a>
+					</p>
+				</div>
+			</div>
+
+
+
+		</div> <!-- end services-list -->
+
+	</section> <!-- end s-services -->
+
+	<!-- works
+    ================================================== -->
+	<section id='works' class="s-works">
+
+		<div class="intro-wrap">
+
+			<div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+				<div class="col-full">
+					<h3 class="subhead">Previous Events</h3>
+					<h1 class="display-2">We love what we do</h1>
+
+
+				</div>
+			</div>
+		</div> <!-- end intro-wrap -->
+
+
+		<div class="slider">
+			<!-- #region Jssor Slider Begin -->
+			<!-- Generator: Jssor Slider Maker -->
+			<!-- Source: https://www.jssor.com -->
+			<script src="js/jssor.slider-27.5.0.min.js" type="text/javascript"></script>
+			<script type="text/javascript">
+				jssor_1_slider_init = function() {
+
+					var jssor_1_SlideshowTransitions = [{
+							$Duration: 800,
+							x: 0.3,
+							$During: {
+								$Left: [0.3, 0.7]
+							},
+							$Easing: {
+								$Left: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							x: -0.3,
+							$SlideOut: true,
+							$Easing: {
+								$Left: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							x: -0.3,
+							$During: {
+								$Left: [0.3, 0.7]
+							},
+							$Easing: {
+								$Left: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							x: 0.3,
+							$SlideOut: true,
+							$Easing: {
+								$Left: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							y: 0.3,
+							$During: {
+								$Top: [0.3, 0.7]
+							},
+							$Easing: {
+								$Top: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							y: -0.3,
+							$SlideOut: true,
+							$Easing: {
+								$Top: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							y: -0.3,
+							$During: {
+								$Top: [0.3, 0.7]
+							},
+							$Easing: {
+								$Top: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							y: 0.3,
+							$SlideOut: true,
+							$Easing: {
+								$Top: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							x: 0.3,
+							$Cols: 2,
+							$During: {
+								$Left: [0.3, 0.7]
+							},
+							$ChessMode: {
+								$Column: 3
+							},
+							$Easing: {
+								$Left: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							x: 0.3,
+							$Cols: 2,
+							$SlideOut: true,
+							$ChessMode: {
+								$Column: 3
+							},
+							$Easing: {
+								$Left: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							y: 0.3,
+							$Rows: 2,
+							$During: {
+								$Top: [0.3, 0.7]
+							},
+							$ChessMode: {
+								$Row: 12
+							},
+							$Easing: {
+								$Top: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							y: 0.3,
+							$Rows: 2,
+							$SlideOut: true,
+							$ChessMode: {
+								$Row: 12
+							},
+							$Easing: {
+								$Top: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							y: 0.3,
+							$Cols: 2,
+							$During: {
+								$Top: [0.3, 0.7]
+							},
+							$ChessMode: {
+								$Column: 12
+							},
+							$Easing: {
+								$Top: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							y: -0.3,
+							$Cols: 2,
+							$SlideOut: true,
+							$ChessMode: {
+								$Column: 12
+							},
+							$Easing: {
+								$Top: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							x: 0.3,
+							$Rows: 2,
+							$During: {
+								$Left: [0.3, 0.7]
+							},
+							$ChessMode: {
+								$Row: 3
+							},
+							$Easing: {
+								$Left: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							x: -0.3,
+							$Rows: 2,
+							$SlideOut: true,
+							$ChessMode: {
+								$Row: 3
+							},
+							$Easing: {
+								$Left: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							x: 0.3,
+							y: 0.3,
+							$Cols: 2,
+							$Rows: 2,
+							$During: {
+								$Left: [0.3, 0.7],
+								$Top: [0.3, 0.7]
+							},
+							$ChessMode: {
+								$Column: 3,
+								$Row: 12
+							},
+							$Easing: {
+								$Left: $Jease$.$InCubic,
+								$Top: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							x: 0.3,
+							y: 0.3,
+							$Cols: 2,
+							$Rows: 2,
+							$During: {
+								$Left: [0.3, 0.7],
+								$Top: [0.3, 0.7]
+							},
+							$SlideOut: true,
+							$ChessMode: {
+								$Column: 3,
+								$Row: 12
+							},
+							$Easing: {
+								$Left: $Jease$.$InCubic,
+								$Top: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							$Delay: 20,
+							$Clip: 3,
+							$Assembly: 260,
+							$Easing: {
+								$Clip: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							$Delay: 20,
+							$Clip: 3,
+							$SlideOut: true,
+							$Assembly: 260,
+							$Easing: {
+								$Clip: $Jease$.$OutCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							$Delay: 20,
+							$Clip: 12,
+							$Assembly: 260,
+							$Easing: {
+								$Clip: $Jease$.$InCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						},
+						{
+							$Duration: 800,
+							$Delay: 20,
+							$Clip: 12,
+							$SlideOut: true,
+							$Assembly: 260,
+							$Easing: {
+								$Clip: $Jease$.$OutCubic,
+								$Opacity: $Jease$.$Linear
+							},
+							$Opacity: 2
+						}
+					];
+
+					var jssor_1_options = {
+						$AutoPlay: 0,
+						$SlideshowOptions: {
+							$Class: $JssorSlideshowRunner$,
+							$Transitions: jssor_1_SlideshowTransitions,
+							$TransitionsOrder: 1
+						},
+						$ArrowNavigatorOptions: {
+							$Class: $JssorArrowNavigator$
+						},
+						$ThumbnailNavigatorOptions: {
+							$Class: $JssorThumbnailNavigator$,
+							$SpacingX: 5,
+							$SpacingY: 5
+						}
+					};
+
+					var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+					/*#region responsive code begin*/
+
+					var MAX_WIDTH = 980;
+
+					function ScaleSlider() {
+						var containerElement = jssor_1_slider.$Elmt.parentNode;
+						var containerWidth = containerElement.clientWidth;
+
+						if (containerWidth) {
+
+							var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+							jssor_1_slider.$ScaleWidth(expectedWidth);
+						} else {
+							window.setTimeout(ScaleSlider, 30);
+						}
+					}
+
+					ScaleSlider();
+
+					$Jssor$.$AddEvent(window, "load", ScaleSlider);
+					$Jssor$.$AddEvent(window, "resize", ScaleSlider);
+					$Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+					/*#endregion responsive code end*/
+				};
+			</script>
+			<style>
+				/*jssor slider loading skin spin css*/
+				.jssorl-009-spin img {
+					animation-name: jssorl-009-spin;
+					animation-duration: 1.6s;
+					animation-iteration-count: infinite;
+					animation-timing-function: linear;
+				}
+
+				@keyframes jssorl-009-spin {
+					from {
+						transform: rotate(0deg);
+					}
+
+					to {
+						transform: rotate(360deg);
+					}
+				}
+
+				/*jssor slider arrow skin 106 css*/
+				.jssora106 {
+					display: block;
+					position: absolute;
+					cursor: pointer;
+				}
+
+				.jssora106 .c {
+					fill: #fff;
+					opacity: .3;
+				}
+
+				.jssora106 .a {
+					fill: none;
+					stroke: #fff;
+					stroke-width: 350;
+					stroke-miterlimit: 10;
+				}
+
+				.jssora106:hover .c {
+					opacity: .5;
+				}
+
+				.jssora106:hover .a {
+					opacity: .8;
+				}
+
+				.jssora106.jssora106dn .c {
+					opacity: .2;
+				}
+
+				.jssora106.jssora106dn .a {
+					opacity: 1;
+				}
+
+				.jssora106.jssora106ds {
+					opacity: .3;
+					pointer-events: none;
+				}
+
+				/*jssor slider thumbnail skin 101 css*/
+				.jssort101 .p {
+					position: absolute;
+					top: 0;
+					left: 0;
+					box-sizing: border-box;
+					background: #000;
+				}
+
+				.jssort101 .p .cv {
+					position: relative;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					border: 2px solid #000;
+					box-sizing: border-box;
+					z-index: 1;
+				}
+
+				.jssort101 .a {
+					fill: none;
+					stroke: #000;
+					stroke-width: 400;
+					stroke-miterlimit: 10;
+					visibility: hidden;
+				}
+
+				.jssort101 .p:hover .cv,
+				.jssort101 .p.pdn .cv {
+					border: none;
+					border-color: transparent;
+				}
+
+				.jssort101 .p:hover {
+					padding: 2px;
+				}
+
+				.jssort101 .p:hover .cv {
+					background-color: rgba(0, 0, 0, 6);
+					opacity: .35;
+				}
+
+				.jssort101 .p:hover.pdn {
+					padding: 0;
+				}
+
+				.jssort101 .p:hover.pdn .cv {
+					border: 2px solid #000;
+					background: none;
+					opacity: .35;
+				}
+
+				.jssort101 .pav .cv {
+					border-color: #000;
+					opacity: .35;
+				}
+
+				.jssort101 .pav .a,
+				.jssort101 .p:hover .a {
+					visibility: visible;
+				}
+
+				.jssort101 .t {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					border: none;
+					opacity: .6;
+				}
+
+				.jssort101 .pav .t,
+				.jssort101 .p:hover .t {
+					opacity: 1;
+				}
+			</style>
+			<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:480px;overflow:hidden;visibility:hidden;">
+				<!-- Loading Screen -->
+				<div data-u="loading" class="jssorl-009-spin" style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+					<img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;" src="img/spin.svg" />
+				</div>
+				<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:380px;overflow:hidden;">
+					<div>
+						<img data-u="image" src="img/0.jpeg" />
+						<img data-u="thumb" src="img/0.jpeg" />
+					</div>
+					<div>
+						<img data-u="image" src="img/1.jpeg" />
+						<img data-u="thumb" src="img/1.jpeg" />
+					</div>
+					<div>
+						<img data-u="image" src="img/2.jpeg" />
+						<img data-u="thumb" src="img/2.jpeg" />
+					</div>
+					<div>
+						<img data-u="image" src="img/3.jpeg" />
+						<img data-u="thumb" src="img/3.jpeg" />
+					</div>
+					<div>
+						<img data-u="image" src="img/4.jpeg" />
+						<img data-u="thumb" src="img/4.jpeg" />
+					</div>
+					<div>
+						<img data-u="image" src="img/5.jpeg" />
+						<img data-u="thumb" src="img/5.jpeg" />
+					</div>
+					<div>
+						<img data-u="image" src="img/6.jpeg" />
+						<img data-u="thumb" src="img/6.jpeg" />
+					</div>
+					<div>
+						<img data-u="image" src="img/7.jpeg" />
+						<img data-u="thumb" src="img/7.jpeg" />
+					</div>
+					<!---<div>
+                                <img data-u="image" src="img/039.jpg" />
+                                <img data-u="thumb" src="img/039-s190x90.jpg" />
+                            </div>
+                            <div>
+                                <img data-u="image" src="img/040.jpg" />
+                                <img data-u="thumb" src="img/040-s190x90.jpg" />
+                            </div>--->
+				</div>
+				<!-- Thumbnail Navigator -->
+				<div data-u="thumbnavigator" class="jssort101" style="position:absolute;left:0px;bottom:0px;width:980px;height:100px;background-color:#000;" data-autocenter="1" data-scale-bottom="0.75">
+					<div data-u="slides">
+						<div data-u="prototype" class="p" style="width:190px;height:90px;">
+							<div data-u="thumbnailtemplate" class="t"></div>
+							<svg viewbox="0 0 16000 16000" class="cv">
+								<!--<circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
+                                        <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
+                                        <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>-->
+							</svg>
+						</div>
+					</div>
+				</div>
+				<!-- Arrow Navigator -->
+				<div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:162px;left:30px;" data-scale="0.75">
+					<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						<circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+						<polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
+						<line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
+					</svg>
+				</div>
+				<div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:162px;right:30px;" data-scale="0.75">
+					<svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						<circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+						<polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
+						<line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
+					</svg>
+				</div>
+			</div>
+			<script type="text/javascript">
+				jssor_1_slider_init();
+			</script>
+			<!-- #endregion Jssor Slider End -->
+		</div>
+		<br><br>
+		<div class="prev-videos">
+			<div class="video-item">
+				<div class="video-text">
+					<div class="display-2">2016<br>
+					</div>
+					<div class="subhead">mirror of<br>erised</div>
+					<br>
+				</div>
+				<div class="button-video">
+					<a href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rOKm47N12SqyBoAENhnkmuS" target="_blank">
+						<img src="images/play-button.png">
+					</a>
+				</div>
+			</div>
+			<div class="video-item">
+				<div class="video-text">
+					<div class="display-2">2017<br>
+					</div>
+					<div class="subhead">life in <br>technicolor</div>
+					<br>
+				</div>
+				<div class="button-video">
+					<a href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rNRZUkfIBdNeB4b4appSaZJ" target="_blank">
+						<img src="images/play-button.png"> </a>
+				</div>
+			</div>
+			<div class="video-item">
+				<div class="video-text">
+					<div class="display-2">2018<br>
+					</div>
+					<div class="subhead">ikigai</div>
+					<br>
+				</div>
+				<div class="button-video">
+					<a href="https://www.youtube.com/playlist?list=PLsRNoUx8w3rPLggI7D4osyHsXue2Qdyno" target="_blank">
+						<img src="images/play-button.png"></a>
+				</div>
+			</div>
+		</div>
+		<br>
+	</section> <!-- end s-works -->
+	<!-- Speakers
+    ================================================== -->
+	<section id="speakers" class="s-speakers">
+		<div class="row section-header" data-aos="fade-up">
+			<br><br>
+			<h2 class="display-1 display-1--light">Previous Speakers</h2>
+		</div>
+		<div class="row section-header" data-aos="fade-up">
+			<div class="speaker-photo-left">
+				<img src="images/Speakers/Ritviz1.jpg" alt="Image" class="img-fluid">
+			</div>
+
+			<div class="speaker-content-right">
+				<h4 style=color:#e62b1e>Ritviz Srivastava</h4>
+				<p>What does it take to create tunes so mesmerizing and enthralling, that you get millions feeling euphoric? Ritviz, Pune's own homegrown talent has it figured out. He started dabbling in music since the age of 10. Now, Ritviz is a music
+					composer, producer, songwriter, singer and rapper all packed into one. He kickstarted his journey in July 2003 with his debut EP titled "Vizdumb". With bangers like Udd Gaye and Jeet to his name, and his debut album Ved coming out this
+					year, a lot can be said about the meteoric rise of this young musical genius. His signature style of heavy bass fused with classical Hindustani musical influences calls for a unique and mesmerizing experience, bringing to us waves of
+					nostalgia but also having us tapping our feet and hearts to the beats.
+					His journey so far speaks volumes about imbibing your passion into you from an early age, so much so that it comes naturally to you after a while, as if drawn from the very depths of the soul.</p>
+			</div>
+		</div>
+		<div class="row section-header" data-aos="fade-up">
+			<div class="speaker-photo-right">
+				<img src="images/Speakers/Bindumadhav%20Khire1.jpg" alt="Image" class="img-fluid">
+			</div>
+
+			<div class="speaker-content-left">
+				<h4 style=color:#e62b1e>Bindhumadhav Khire</h4>
+				<p>As a society, we've come a long way from times where even the most prominent and valuable individuals such as Alan Turing were severely discriminated against, to now where in many countries, gay people can exercise their right to love
+					freely. India, too, is on the path towards true equality through the work of activists like Bindumadhav Khire.
+
+					Bindumadhav Khire is a Gay Rights Activist from Pune. He retired from his IT career at the age of 35 and in 2002, founded Sampathik Trust in Pune to work for LGBTQIA+ Rights.
+					He has written 8 books, 3 plays and has made 2 short films on these issues. He has been organizing annual LGBTQIA+ Pride Walks in Pune since 2011.
+					His work is a testament to sheer will, hard work and resilience, and to how even the worse of odds can be overcome by courage, perseverance, hope and love.</p>
+			</div>
+		</div>
+
+		<div class="row section-header" data-aos="fade-up">
+			<div class="speaker-photo-left">
+				<img src="images/Speakers/prasan.jpg" alt="Image" class="img-fluid">
+			</div>
+
+			<div class="speaker-content-right">
+				<h4 style=color:#e62b1e>Prasan Wilfred</h4>
+				<p>What happens in the name of education these days but pandering to the needs of the bureaucracy and those in power? Thankfully, some do exist who, through grassroots movements, have started revolutionising the meaning and means of
+					education.
+					Mr. Prasan Wilfred is one of them. Mr. Wilfred is the Founder and ex-Director of The Genius, based in Indore. The Genius started off as a small group of children of varied ages, visiting Mr. Wilfred's house to solve puzzles, read books and
+					have discussions. Mr. Wilfred - or "Uncle" as he is fondly known - aims to celebrate the learning process of a child via recreational activities. He firmly believes in the process of self-learning and emphasises on the importance of
+					teaching children soft skills from a young age.
+					His work underscores the importance of imparting the necessary values of education to children, that they may be truly learned in not only the academic ways and methods, but also worldly ones.</p>
+			</div>
+		</div>
+
+		<div class="row section-header" data-aos="fade-up">
+			<div class="speaker-photo-right">
+				<img src="images/Speakers/Medha%20Tadpatrikar.jpg" alt="Image" class="img-fluid">
+			</div>
+
+			<div class="speaker-content-left">
+				<h4 style=color:#e62b1e>Dr. Medha Tadpatrikar</h4>
+				<p>A world without plastic is unimaginable, even if we know the adverse effects it can have on our own health, and on the environment in general. Plastic is non-biodegradable, which made it rather difficult to dispose of - until now.
+					Dr. Medha Tadpatrikar has shown us a fantastic innovation that allows us to recover plastic by converting it to fuel. Witnessing the death of deer due to plastic ingestion was the catalyst for Medha to begin working on waste plastic and
+					segregation at source.
+					Under her leadership, the Keshav Sita trust collects waste plastic. Till date, more than 200 metric tonnes of plastic has been collected and saved from the landfill. She is also instrumental in developing the technology that recovers usable
+					fuel from waste plastic.
+					Sustainable technologies are expensive, but Dr. Medha has shown that with enough dedication, one can innovate and figure out easier and more cost-effective ways of reducing the burden on this planet of ours.</p>
+
+			</div>
+		</div>
+		<div class="row section-header" data-aos="fade-up">
+			<div class="speaker-photo-left">
+				<img src="images/Speakers/Aakash%20Shah.jpg" alt="Image" class="img-fluid">
+			</div>
+
+			<div class="speaker-content-right">
+				<h4 style=color:#e62b1e>Aakash Shah</h4>
+				<p>The toughest of problems that plague the world are challenged not by the governments or organisations, but by activists working at the base level to uproot these ills. It takes real determination to become a youth activist for a cause.
+					What does a youth activist do, however? Aakash Shah shares his experiences and lessons as a youth activist and gives us a different take on how we can create a positive impact in society. Aakash is a 23 year old Human Rights Activist and
+					chairman of Action for Pune Development, a youth organization based in Pune. He is one of the very few youth advocates to have attended the official session of the 35th Human Rights Council in Geneva.
+					His activism proves that no problem is too large for us to overcome as a society and as a united front.</p>
+			</div>
+		</div>
+		<div class="row section-header" data-aos="fade-up">
+			<div class="speaker-photo-right">
+				<img src="images/Speakers/Himani%20Chaukar.jpg" alt="Image" class="img-fluid">
+			</div>
+
+			<div class="speaker-content-left">
+				<h4 style=color:#e62b1e>Himani Chaukar</h4>
+				<p>Many ancient cultures were based on nature-worshipping, drawing most inspiration from it and sustaining themselves off of it. The tribal communities in India may seem to lead a life devoid of the comforts and facilities we are so used to
+					today - but are they really backward?
+					Himani Chaukar takes us through her journey in Ziro and shows us what makes tribal culture special and important to the outside world. Himani Chaukar is an enthusiastic teacher of Philosophy at Ruia College, Mumbai. She is a recipient of
+					Asiatic Society’s research fellowship for a social sciences and the best research project award in the state level inter-university research convention ‘Avishkar’ She has been studying and researching on the subject of tribal studies
+					focusing on the tribes of Arunachal Pradesh and is well versed with the intricate details of their lifestyles!
+					Her work presents a rather unique and important insight into the lives of these people, showing us that deep inside, we're not so different after all.</p>
+			</div>
+		</div>
+		<div class="rectangle-box">
+
+		</div>
+	</section>
+	<!-- end of speaker section>
+    ================================================== -->
+
+	<!---
+
+    <section id="clients" class="s-clients">
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our Sponsors</h3>
+                <h1 class="display-2" style = "color: #404040">TEDxPICT has been honored to
+                partner up with these sponsors</h1>
+            </div>
+        </div>
+
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-full">
+                <div class="clients">
+
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/budhani.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/punetimes.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/kays.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/debelle.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/TalesandSpirits.jpg.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/mithi.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/fiesta.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/Nutrisnacks.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/printmytee.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/orbit.png" /></a>
+
+                </div> <!-- end clients -->
+	<!-- </div>  end col-full -->
+	<!-- </div>  end clients-outer -->
+
+
+	<!-- </section>  end s-clients -->
+
+
+
+	<!-- Our Team
+    ================================================= -->
+	<!-- Team -->
+	<!---<section id="team" class="s-team">
+     <div class="row section-header" data-aos="fade-up">
+         <br><br><br>
+         <div class="col-full">
+          <div class="team-memberhead">
+            <center><h2 class="display-1 display-1--light">Our Team</h2>
+            <h3 class="subhead">Meet our amazing team</h3>
+          </center></div>
+         </div>
+         <div class="row-team1">
+            <div class="team-head1">
+              <h3 class="h3">Licensee</h3>
+              <h3 class="subhead">kevin <br> stephen</h3>
+            </div>
+            <div class="team-head2">
+              <h3 class="h3">Co-Licensee</h3>
+              <h3 class="subhead">sanya <br> varghese</h3>
+            </div>
+         </div>
+         <br><br><br>
+         <div class="row-team" style="text-align: center">
+            <div class="team-member">
+              <h3 class="h5">Operations</h3>
+              <h3 class="subhead1">shubham mahajan<br>sanya gulati</h3>
+            </div>
+          <div class="team-member">
+              <h3 class="h5">Partnerships</h3>
+              <h3 class="subhead1">Vedant puranik<br>mihir pandharipande</h3>
+            </div>
+         <div class="team-member">
+              <h3 class="h5">Content</h3>
+              <h3 class="subhead1">Ashutosh Pardeshi<br>Mayuri lonkar</h3>
+            </div>
+         </div>
+         <br>
+         <div class="row-team" style="text-align: center">
+            <div class="team-member">
+              <h3 class="h5">Design</h3>
+              <h3 class="subhead1">Ridhwik Kalgaonkar<br>Devanshi Moyal<br>Natasha Kamerkar<br></h3>
+            </div>
+         </div>
+         <br>
+         <div class="row-team"style="text-align:center">
+             <div class="team-member">
+              <h3 class="h5">Curation</h3>
+              <h3 class="subhead1">Sidhee hande</h3>
+            </div>
+            <div class="team-member">
+              <h3 class="h5">Branding</h3>
+              <h3 class="subhead1">tanvi kakde<br>himani gwalani</h3>
+            </div>
+         <div class="team-member">
+              <h3 class="h5">Communications</h3>
+              <h3 class="subhead1">Sachin Johnson </h3>
+            </div>
+         </div>
+         <br><br>
+         <br><br>
+    </div>
+    </section>--->
+
+
+	<!-- end section team -->
+
+
+
+
+	<!-- contact
+    ================================================== -->
+	<section id="contact" class="s-contact">
+		<div class="row section-header" data-aos="fade-up">
+			<div class="col-full">
+				<br>
+				<h3 class="subhead">Contact Us</h3>
+			</div>
+		</div>
+		<div class="row section-header" data-aos="fade-up">
+			<div class="subhead" style="color: white" style="text-align: center">KEVIN STEPHEN: 9619142360<br>
+				SANYA VARGHESE: 9205909374</div>
+		</div>
+
+		<div class="row contact-content" data-aos="fade-up">
+			<div class="subhead" style="text-align: center">
+				Send Us Your Blogs
+
+			</div> <!-- end contact-primary -->
+			<br>
+			<div class="subhead" style="color: white">
+				<center><br>E-MAIL US AT: <br> <a style="color: white;" href="mailto:communications@tedxpict.com">communications@tedxpict.com</a></center>
+			</div>
+			<br><br>
+
+			<div class="subhead" style="text-align: center">
+				FOLLOW US ON
+			</div>
+			<div class="home-social-contact">
+				<center>
+					<a href="https://facebook.com/tedxpict" target="_blank"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+					<a href="https://instagram.com/tedxpict" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+					<a href="https://twitter.com/tedxpict?lang=en" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+					<a href="https://www.flickr.com/photos/144385794@N03/" target="_blank"><i class="fab fa-flickr" aria-hidden="true"></i></a>
+				</center>
+			</div><br> <br>
+
+			<center>
+				<h5 style=color:#e62b1e>This independent TEDx event is operated under license from TED</h5>
+			</center>
+			<br> <br>
+
+			<!--<div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-1w5x9c3ww3dzwDaB-38.gif' border='0' alt='free counter'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=1w5x9c3ww3dzwDaB'></script></div>-->
+
+			<a href="https://smallseotools.com/visitor-hit-counter/" target="_blank" title="Visitor Hit Counter">
+				<img src="https://smallseotools.com/counterDisplay?code=6c0383b0de6105e669545dc86bb3fc49&style=0015&pad=5&type=page&initCount=938" title="Visitor Hit Counter" Alt="Visitor Hit Counter" border="0" visibility: hidden>
+			</a>
+
+			<center>
+				<div class="map">
+					<p style="color: white">
+						30th September 2018 <br>
+						VENUE: Dewang Mehta Auditorium <br>
+					</p>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.982707029307!2d73.82687101484285!3d18.52968358740369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf779a219367%3A0x9b4fbac3e4f96f4a!2sDewang+Mehta!5e0!3m2!1sen!2sin!4v1554536878353!5m2!1sen!2sin"
+						width="100" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+			</center>
+
+		</div> <!-- end contact-content -->
+
+	</section> <!-- end s-contact -->
+
+
+	<!-- photoswipe background
+    ================================================== -->
+
+
+
+
+
+
+	<!-- Java Script
+    ================================================== -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
