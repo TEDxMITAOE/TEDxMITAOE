@@ -1,0 +1,134 @@
+{
+  "_args": [
+    [
+      "sal.js",
+      "/opt/lampp/htdocs/wt"
+    ]
+  ],
+  "_from": "sal.js@latest",
+  "_hasShrinkwrap": false,
+  "_id": "sal.js@0.6.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/sal.js",
+  "_nodeVersion": "9.11.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/sal.js_0.6.3_1570879310693_0.20135737852242253"
+  },
+  "_npmUser": {
+    "email": "miroslaw.ciastek@gmail.com",
+    "name": "mciastek"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "sal.js",
+    "raw": "sal.js",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/sal.js/-/sal.js-0.6.3.tgz",
+  "_shasum": "ae710cb6729b41e75ee6159be43726f6f32de8e4",
+  "_shrinkwrap": null,
+  "_spec": "sal.js",
+  "_where": "/opt/lampp/htdocs/wt",
+  "author": {
+    "name": "Mirosław Ciastek"
+  },
+  "bugs": {
+    "url": "https://github.com/mciastek/sal/issues"
+  },
+  "dependencies": {},
+  "description": "Performance focused, lightweight scroll animation library",
+  "devDependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.5.0",
+    "@babel/plugin-transform-runtime": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/runtime": "^7.6.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "core-js": "^3.2.1",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "puppeteer": "^1.19.0",
+    "sass-loader": "^8.0.0",
+    "size-plugin": "^2.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 8,
+    "integrity": "sha512-4iIyN6rmN53EAI8zWIHvqNFyZuM1YKt9Ew5U5zCeyEoDDpPUtnKzebMXagPhzPzw2LwuRBUPhmuypwOqfrFX1Q==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdobdPCRA9TVsSAnZWagAAa/MP/2X7emrr/v925U37ck9b\n+z+8i2TxpFSkMmpZ4wG3/HPb4xHoQiWSCwNprTr3QbhSGWNKL1q5GRzvSdLf\n6qxhmqJp81YwccrM8E/m73keENeLmJKCXYu9VeCYxrxzfDjdr3Rrl1o44HfS\nnnyaqHDwjtdX7c43gKqgebsnXY3mtVeuCZCWVggw1b8P/KAec/oyY9QFmsQm\nHvnhE4fLeT1XocU4vZ8a76QK0NKCziDjWg+x5NYaIOhHMIY5gtjsz3W6s27Z\n8R7Nt8QabX0HIQszhWEjGjjMgQHQZFVCflU5HkjDOLRteNcuP2Ijsxyg5Y4N\nXK+P0EIcbdtCnLhLQikUM6syLXSP726D23i8u9yqegOuV3Ws5kThUwLy3j9b\nzKjs/3QeYn9YTUic3Z2rAk7wnJCqDc0tnJ8fiYnAE57hFM4kqqT/TcUg0yxQ\n9/Dt/FQwgFFQV/BoCFUCC2iEk5MUwtd0HqiEyZjdx+VIVUzq8V1YCEtFmSlA\n1H1A2Os/+2B02/Zq1dc0pZEo1sbYsHrDUBlQKgCCDQsUANd2TBbgYeVkbDtT\nEaJUx8Em+xamdDPYNOPUgKxzouqTyvKNbxm1bnwl3TeBfYvDKvDflMzh4G3K\n6iXZoYS96KQPXRyTaQ3RhkAx7N99wPa9mImgpPOyGrXJyPd8RRTsqNpszbkJ\n40tn\r\n=iLIr\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "ae710cb6729b41e75ee6159be43726f6f32de8e4",
+    "tarball": "https://registry.npmjs.org/sal.js/-/sal.js-0.6.3.tgz",
+    "unpackedSize": 39965
+  },
+  "gitHead": "f27ff17d6ed5d06c3a7ff73c0b5a2b779f46c159",
+  "homepage": "https://github.com/mciastek/sal#readme",
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss)$": "<rootDir>/test/mocks/styleMock.js"
+    },
+    "transform": {
+      ".*": "<rootDir>/node_modules/babel-jest"
+    }
+  },
+  "keywords": [
+    "animate",
+    "animate on scroll",
+    "animations",
+    "css",
+    "on scroll",
+    "performance",
+    "scroll"
+  ],
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/mciastek/sal/blob/master/LICENSE"
+    }
+  ],
+  "main": "dist/sal.js",
+  "maintainers": [
+    {
+      "name": "mciastek",
+      "email": "miroslaw.ciastek@gmail.com"
+    }
+  ],
+  "name": "sal.js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mciastek/sal.git"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "pretest": "eslint ./src/**/*.js",
+    "test": "NODE_ENV=test jest --verbose",
+    "test:watch": "NODE_ENV=test jest --verbose --watchAll"
+  },
+  "version": "0.6.3"
+}
