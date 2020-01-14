@@ -1202,8 +1202,8 @@ div#myModal {
 <!--header start here -->
 <div class="header1">
     </div>
-<header class="header navbar fixed-top navbar-expand-md">
-    <div class="container">
+<header class="header navbar fixed-top navbar-expand-md" style="backgroud:black;">
+    <div class="container" >
     
         <a class="logoad" href="#">
             <img  src="assets/img/logo.png" alt="Evento"/>
@@ -1245,144 +1245,9 @@ div#myModal {
 <button onclick="topFunction()" id="myBtn" title="Go to top">
     <i class="fa fa-level-up" aria-hidden="true"></i>
 </button>
-<!--cover section slider -->
-<section id="home" class="home-cover">
-    <div class="cover_slider owl-carousel owl-theme">
-       
-        <div class="cover_item"  >
-            <div class="celebrating">
-                <center>
-                    <h1 id="demop" style="color:red;">
-                        Celebrating
-                        <a href="" id="enter" style="color:white;;font-weight: 700;"  class="typewrite" data-period="2000" data-type='[ "Technology", "Entertainment", "Design", "Ideas","Momentum" ]'>
-                            <span class="wrap"></span>
-                        </a>
-                    </h1>
-                    <h5 style="color:white">18<sup>th</sup> January, 2020 - Pune</h5>
-                    <script>
-                        var TxtType = function(el, toRotate, period) {
-                            this.toRotate = toRotate;
-                            this.el = el;
-                            this.loopNum = 0;
-                            this.period = parseInt(period, 10) || 2000;
-                            this.txt = '';
-                            this.tick();
-                            this.isDeleting = false;
-                        };
-                        TxtType.prototype.tick = function() {
-                            var i = this.loopNum % this.toRotate.length;
-                            var fullTxt = this.toRotate[i];
-                            if (this.isDeleting) {
-                                this.txt = fullTxt.substring(0, this.txt.length - 1);
-                            } else {
-                                this.txt = fullTxt.substring(0, this.txt.length + 1);
-                            }
-                            this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-                            var that = this;
-                            var delta = 200 - Math.random() * 100;
-                            if (this.isDeleting) {
-                                delta /= 2;
-                            }
-                            if (!this.isDeleting && this.txt === fullTxt) {
-                                delta = this.period;
-                                this.isDeleting = true;
-                            } else if (this.isDeleting && this.txt === '') {
-                                this.isDeleting = false;
-                                this.loopNum++;
-                                delta = 500;
-                            }
-                            setTimeout(function() {
-                                that.tick();
-                            }, delta);
-                        };
-                        window.onload = function() {
-                            var elements = document.getElementsByClassName('typewrite');
-                            for (var i = 0; i < elements.length; i++) {
-                                var toRotate = elements[i].getAttribute('data-type');
-                                var period = elements[i].getAttribute('data-period');
-                                if (toRotate) {
-                                    new TxtType(elements[i], JSON.parse(toRotate), period);
-                                }
-                            }
-                            // INJECT CSS
-                            var css = document.createElement("style");
-                            css.type = "text/css";
-                            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-                            document.body.appendChild(css);
-                        };
-                    </script>
-                </center>
-               <center>
-                <a href="https://www.townscript.com/e/tedxmitaoe-323323" id="bookticket"  class=" btn btn-primary btn-rounded" >
-                    Buy Tickets Now
-                </a>
-               </center>
-            </div>
-        </div>
-    </div>
-    <div class="cover_nav">
-        <ul class="cover_dots">
-
-            <div class="arrow bounce">
-                <a class="fa fa-arrow-down fa-2x" style="color: #e62b1e;" href="#downs"></a>
-              </div>
-
-          
-
-        </ul>
-    </div>
-</section>
 <!--cover section slider end -->
 
-<!--about the event -->
-<section class="pt100 pb100" id="downs">
-    <div class="container">
-        <div class="section_title" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000">
-             
-            <h3 style="height: 30px;border-left: 4px solid #e62b1e; position: absolute;" class="title">
-
-            </h3>
-            <h3 >
-                &nbsp;  &nbsp; Momentum
-            </h3>
-        </div><br><br>
-        <div class="row justify-content-center mypara">
-             <p>
-            Momentum, that drive the world keeps talking about. The energy, the force, the strength, the thrust that motivates us to burst the bubbles of our comfort zones and enforces us to thrive on our ambitions, to conquer our inhibitions and to achieve our ultimate goals. Momentum suggests motion, demands anything but stagnancy. And that's something we have been bred upon. From the sacred lessons in our Holy Vedas to the uptown contemporary writers these days, we are constantly hammered with the importance of momentum. Wherever you are, whatever you do, whichever place you dream of getting to, the answer is just one i.e. momentum. There is no surviving without it. It shapes us. There is no one who isn't engulfed by the embrace of progress. Be it in any field like social, economical, spiritual or educational. There is only one way with momentum, forward. And therefore we find ourselves at the epitome of curiosity as we intend to hear all about this from the masters of it who are our distinguished speakers.
-            </p>
-        </div>
-    </div>
-</section>
-<!--about the event end -->
-<!--about the event -->
-<br><br><br><br>
-<section class="pt100 pb100" id="downs">
-    <div class="container">
-       
-        <div class="section_title" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000">
-             
-            <h3 style="height: 30px;border-left: 4px solid #e62b1e; position: absolute;" class="title">
-
-            </h3>
-            <h3 >
-                &nbsp;  &nbsp; About TED
-            </h3>
-        </div><br><br>
-        <div class="row justify-content-center mypara">
-            <p data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="800" >
-                TED is a nonprofit devoted to spreading ideas, usually in the form of short, powerful talks (18 minutes or less). TED began in 1984 as a conference where Technology, Entertainment and Design converged, and today covers almost all topics — from science to business to global issues — in more than 100 languages. Meanwhile, independently run TEDx events help share ideas in communities around the world. TED is a nonpartisan nonprofit devoted to spreading ideas, usually in the form of short, 
-            
-                powerful talks. TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TEDTalks video and live speakers combine to spark deep discussion and connection in a small group.
-            </p>
-          
-        </div>
-
-       
-    </div>
-</section>
-<!--about the event end -->
-
-<br><br><br>
+<br><br><br><br><br>
 <!--speaker section-->
 <section class="pb100" >
     <div class="container" id="sperker">
@@ -1391,7 +1256,7 @@ div#myModal {
 
             </h3>
             <h3 data-sal="zoom-in" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000">
-                &nbsp;&nbsp;Speakers of TEDxMITAOE '20
+                &nbsp;&nbsp;Performance
             </h3>
            
         </div>
@@ -1405,10 +1270,10 @@ div#myModal {
         <div class="col-md-3 col-sm-6">
             <div class="speaker_box">
                 <div class="speaker_img">
-                    <img id="iii1"data-toggle="modal" data-target="#myModal" src="assets/img/speakers/Chaturvedi.png" alt="speaker name">
+                    <img id="iii1"data-toggle="modal" data-target="#myModal" src="img/ryhtmfunk.jpg" alt="speaker name">
                     <div class="info_box">
-                        <h5 class="name">Dr. S.K. Chaturvedi</h5>
-                        <p class="position">Psychiatry</p>
+                        <h5 class="name">RHYTHM FUNK</h5>
+                        <p class="position">Dhol-Tasha Performers</p>
                     </div>
                 </div>
             </div>
@@ -1421,7 +1286,7 @@ div#myModal {
           <!-- Modal content-->
           <div class="modal-content">
             <div class="modal-header">
-            <h4 class="modal-title">Dr. S.K. Chaturvedi</h4>
+            <h4 class="modal-title">RHYTHM FUNK</h4>
               <button style="cursor:pointer" type="button" class="close" data-dismiss="modal">&times;</button>
 
             </div>
@@ -1431,12 +1296,12 @@ div#myModal {
                     
                     <div class="row" >
                         <div class="speimg" width="" style="" >
-                            <center><img height="auto" class="rounded-circle" src="assets/img/speakers/Chaturvedi.png" alt="speaker name">
+                            <center><img height="200px; width=100px;" class="rounded-circle" src="img/ryhtmfunk.jpg" alt="speaker name">
                         </div>
 
 
                         <div class="soc" style="position: absolute;">
-                            <a href="https://in.linkedin.com/in/sk-chaturvedi-56458480?trk=people-guest_profile-result-card_result-card_full-click"><i class="ion-social-linkedin" id="link"></i></a><br>
+                            <a href="#"><i class="ion-social-linkedin" id="link"></i></a><br>
                             <a href="#"><i class="ion-social-facebook" id="face"></i></a><br>
                             <a href="#"><i class="ion-social-instagram" id="inst"></i></a><br>
                             <a href="#"><i class="ion-social-twitter" id="twit"></i></a><br>
@@ -1446,8 +1311,7 @@ div#myModal {
                 </div>
                     
                         <br><br>
-                    <span>He is a senior professor of Psychiatry and Dean of Behavioural Sciences at NIMHANS, Bangalore. 
-His main area of research and work have been consultation liaison Psychiatry, Chronic Pain & Somatization, Neuropsychiatry and Quality of life research. Psycho-oncology & Palliative Care and Cultural Psychiatry.</span>
+                    <span>Something here</span>
                 <br><br>
                 </center>
                     <br>
@@ -1468,10 +1332,10 @@ His main area of research and work have been consultation liaison Psychiatry, Ch
 <div class="col-md-3 col-sm-6">
     <div class="speaker_box">
         <div class="speaker_img">
-            <img id="iii2" data-toggle="modal" data-target="#myModal1" src="assets/img/speakers/Srushti.png" alt="speaker name">
+            <img id="iii2" data-toggle="modal" data-target="#myModal1" src="img/adityapatil.jpeg" alt="speaker name">
             <div class="info_box">
-                <h5 class="name">Srushti Nerkar</h5>
-                <p class="position">Innovator & Child Prodigy</p>
+                <h5 class="name">Aditya Patil</h5>
+                <p class="position">Description</p>
             </div>
         </div>
     </div>
@@ -1484,7 +1348,7 @@ His main area of research and work have been consultation liaison Psychiatry, Ch
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-        <h4 class="modal-title">Srushti Nerkar</h4>
+        <h4 class="modal-title">Aditya Patil</h4>
           <button style="cursor:pointer" type="button" class="close" data-dismiss="modal">&times;</button>
     
         </div>
@@ -1493,13 +1357,13 @@ His main area of research and work have been consultation liaison Psychiatry, Ch
       
                 <div class="row" >
                     <div class="speimg" width="" style="" >
-                        <center><img height="auto" class="rounded-circle" src="assets/img/speakers/Srushti.png" alt="speaker name"> 
+                        <center><img height="250px;" width="300px" class="rounded-circle" src="img/adityapatil.jpeg" alt="speaker name"> 
                     </div>
 
                     
                     <div class="soc" style="position: absolute;">
                         <a href="#"><i class="ion-social-linkedin" id="link"></i></a><br>
-                        <a href="https://www.facebook.com/srushti.invent/"><i class="ion-social-facebook" id="face"></i></a><br>
+                        <a href="#"><i class="ion-social-facebook" id="face"></i></a><br>
                         <a href="#"><i class="ion-social-instagram" id="inst"></i></a><br>
                         <a href="#"><i class="ion-social-twitter" id="twit"></i></a><br>
 
@@ -1508,8 +1372,7 @@ His main area of research and work have been consultation liaison Psychiatry, Ch
             </div>
 
                 <br><br>
-                <span>She is a social innovator and a child prodigy working on water conservation with some innovative tools invented by her.  
-    She had created a working prototype of a water-saving shower with save of upto 85% of the water in a regular shower bath. Considering a novelty of innovation, a short film is published on her hard work done in association with the UN.</span>
+                <span>Something Here</span>
             <br><br>
             </center>
             <br>
@@ -1531,10 +1394,10 @@ His main area of research and work have been consultation liaison Psychiatry, Ch
 <div class="col-md-3 col-sm-6">
     <div class="speaker_box">
         <div class="speaker_img">
-            <img id="iii3" data-toggle="modal" data-target="#myModal2" src="assets/img/speakers/Rahul.png" alt="speaker name">
+            <img id="iii3" data-toggle="modal" data-target="#myModal2" src="img/per.JPG" alt="speaker name">
             <div class="info_box">
-                <h5 class="name">Rahul Kaushik</h5>
-                <p class="position">Poet & Writer</p>
+                <h5 class="name">Performers</h5>
+                <p class="position">Performance</p>
             </div>
         </div>
     </div>
@@ -1551,7 +1414,7 @@ His main area of research and work have been consultation liaison Psychiatry, Ch
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-        <h4 class="modal-title">Rahul Kaushik</h4>
+        <h4 class="modal-title">Performer</h4>
           <button style="cursor:pointer" type="button" class="close" data-dismiss="modal">&times;</button>
     
         </div>
@@ -1560,15 +1423,15 @@ His main area of research and work have been consultation liaison Psychiatry, Ch
       
                 <div class="row" >
                     <div class="speimg" width="" style="" >
-                        <center><img height="auto" class="rounded-circle" src="assets/img/speakers/Rahul.png" alt="speaker name">
+                        <center><img height="250px" width="300px" class="rounded-circle" src="img/per.JPG" alt="speaker name">
                     </div>
 
                        
                     <div class="soc" style="position: absolute;">
                         <a href="#"><i class="ion-social-linkedin" id="link"></i></a><br>
-                        <a href="https://www.facebook.com/TheMeltingWords/"><i class="ion-social-facebook" id="face"></i></a><br>
-                        <a href="https://www.instagram.com/themeltingwords/?hl=en"><i class="ion-social-instagram" id="inst"></i></a><br>
-                        <a href="https://twitter.com/kaushkrahul?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="ion-social-twitter" id="twit"></i></a><br>
+                        <a href="#"><i class="ion-social-facebook" id="face"></i></a><br>
+                        <a href="#"><i class="ion-social-instagram" id="inst"></i></a><br>
+                        <a href="#"><i class="ion-social-twitter" id="twit"></i></a><br>
 
                     </div>
                 </div>
@@ -1578,11 +1441,7 @@ His main area of research and work have been consultation liaison Psychiatry, Ch
 
 
                 <br><br>
-                <span>He is a poet and a writer. He is renowned for writing The Melting Words.
-    
-    Last year he launched his debut book 'The Melting Words' chapter 1.
-    
-    He is regularly invited as a speaker, judge or to conduct writing workshops in various colleges such as IITs and SRCC Delhi.</span>
+                <span>Something Here</span>
             <br><br>
             </center>
             
@@ -1602,272 +1461,19 @@ His main area of research and work have been consultation liaison Psychiatry, Ch
 
 
 <!--4-->
-<div class="col-md-3 col-sm-6">
-    <div class="speaker_box">
-        <div class="speaker_img">
-            <img id="iii4" data-toggle="modal" data-target="#myModal3" src="assets/img/speakers/Rhythm.png" alt="speaker name">
-            <div class="info_box">
-                <h5 class="name">Rhythm Funk</h5>
-                <p class="position">Dhol-Tasha Performers</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="myModal3" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-        <h4 class="modal-title">Rhythm Funk</h4>
-          <button style="cursor:pointer" type="button" class="close" data-dismiss="modal">&times;</button>
-    
-        </div>
-        <div class="modal-body">
-            <div class="spe" style="">
-      
-                <div class="row" >
-                    <div class="speimg" width="" style="" >
-                        <center><img height="auto" class="rounded-circle" src="assets/img/speakers/Rhythm.png" alt="speaker name">
-                    </div>
-
-                       
-                    <div class="soc" style="position: absolute;">
-                        <a href="#"><i class="ion-social-linkedin" id="link"></i></a><br>
-                        <a href="https://www.facebook.com/RhythmFunk/"><i class="ion-social-facebook" id="face"></i></a><br>
-                        <a href="https://www.instagram.com/rhythm_funk/"><i class="ion-social-instagram" id="inst"></i></a><br>
-                        <a href="https://twitter.com/rhythm_funk?lang=en"><i class="ion-social-twitter" id="twit"></i></a><br>
-
-                    </div>
-                </div>
-            </div>
-
-                <br><br>
-                <span>Group of musicians from Maharashtra.
-    
-    Globally recognized Dhol-Tasha performers
-    
-   They cover Western songs on Maharashtrian Dhol-Tasha. 
-    They have YouTube Silver button with 240K+ Subscribers.
-    </span>
-            <br><br>
-            </center>
-        
-
-        </div>
-        <div >
-         <center> <button type="button" id="buysp" class="btn btn-default"><a href="https://www.townscript.com/e/tedxmitaoe-323323">Buy Tickets</a></button></center>
-         <br>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-
 <!--5-->
-<div class="col-md-3 col-sm-6">
-    <div class="speaker_box">
-        <div class="speaker_img">
-            <img id="iii5" data-toggle="modal" data-target="#myModal4" src="assets/img/swpnil.jpeg" alt="speaker name">
-            <div class="info_box">
-                <h5 class="name">Swapnil Joshi</h5>
-                <p class="position">Indian Film & Television Actor</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="myModal4" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-        <h4 class="modal-title">Swapnil Joshi</h4>
-          <button style="cursor:pointer" type="button" class="close" data-dismiss="modal">&times;</button>
-    
-        </div>
-        <div class="modal-body">
-            <div class="spe" style="">
-      
-                <div class="row" >
-                    <div class="speimg" width="" style="" >
-                        <center><img height="300px" width="300px"  class="rounded-circle" src="img/swpnil.jpeg" alt="speaker name">
-                    </div>    
-    
-                           
-                    <div class="soc" style="position: absolute;">
-                        <a href="#"><i class="ion-social-linkedin" id="link"></i></a><br>
-                        <a href="https://www.facebook.com/swwapniljoshi/"><i class="ion-social-facebook" id="face"></i></a><br>
-                        <a href="https://www.instagram.com/swwapnil_joshi/?hl=en"><i class="ion-social-instagram" id="inst"></i></a><br>
-                        <a href="https://twitter.com/swwapniljoshi?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="ion-social-twitter" id="twit"></i></a><br>
-    
-                    </div>
-                </div>
-            </div>
-    
-    
-                <br><br>
-                <span>He is an Indian Actor, Producer, Television personality, RJ, Entrepreneur and a Humanitarian.
-                    His movies are not only commercially successful but also critically acclaimed. Even after being 
-                    a big shot in the Marathi Film Industry, He still has maintained his hunger for doing better work 
-                    and is truly an inspiration.
-                </span>
-            <br><br>
-            </center>
-            
-    
-        </div>
-        <div >
-         <center> <button type="button" id="buysp" class="btn btn-default"><a href="https://www.townscript.com/e/tedxmitaoe-323323">Buy Tickets</a></button></center>
-         <br>
-        </div>
-      </div>
-    
-    </div>
-    </div>
     
     
 
 <!--6-->
-    <div class="col-md-3 col-sm-6">
-    <div class="speaker_box">
-        <div class="speaker_img">
-            <img id="iii5" data-toggle="modal" data-target="#myModal5" src="img/aakash.jpg" alt="speaker name">
-            <div class="info_box">
-                <h5 class="name">Aakash Malhotra</h5>
-                <p class="position">Traveller</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="myModal5" role="dialog">
-    <div class="modal-dialog">
     
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-        <h4 class="modal-title">Aakash Malhotra</h4>
-          <button style="cursor:pointer" type="button" class="close" data-dismiss="modal">&times;</button>
-    
-        </div>
-        <div class="modal-body">
-            <div class="spe" style="">
-      
-                <div class="row" >
-                    <div class="speimg" width="" style="" >
-                        <center><img height="300px" width="300px"  class="rounded-circle" src="img/aakash.jpg" alt="speaker name">
-                    </div>    
-    
-                           
-                    <div class="soc" style="position: absolute;">
-                        <a href="#"><i class="ion-social-linkedin" id="link"></i></a><br>
-                        <a href="#"><i class="ion-social-facebook" id="face"></i></a><br>
-                        <a href="https://www.instagram.com/wanderwithsky/?hl=en"><i class="ion-social-instagram" id="inst"></i></a><br>
-                        <a href="https://twitter.com/wanderwithsky?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="ion-social-twitter" id="twit"></i></a><br>
-    
-                    </div>
-                </div>
-            </div>
-    
-    
-                <br><br>
-                <span>A mountain boy from India, with a crush on the world. Currently on his 40th country and on a pursuit to travel the world. Travelling internationally frequently for a stretched period experiencing each destination like a local while operating his startup in Digital Advertising and Consulting.
-                    A serial entrepreneur & listed as “10 Most Promising Digital Marketing Consultant – 2019” – ConsultantReview. A serial entrepreneur, angel investor, speaker and travel content creator, Instagrammer and Youtuber.
-                </span>
-            <br><br>
-            </center>
-            
-    
-        </div>
-        <div >
-         <center> <button type="button" id="buysp" class="btn btn-default"><a href="https://www.townscript.com/e/tedxmitaoe-323323">Buy Tickets</a></button></center>
-         <br>
-        </div>
-      </div>
-    
-    </div>
-    </div>
-
-
 <!--7-->
 
-<div class="col-md-3 col-sm-6"> 
-    <div class="speaker_box">
-        <div class="speaker_img">
-            <img id="iii7" data-toggle="modal" data-target="#myModal6" src="assets/img/speakers/Anshu1.png" alt="speaker name">
-            <div class="info_box">
-                <h5 class="name">Kumar Anshu</h5>
-                <p class="position">Founder & CEO Bots 'N Brains</p>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="myModal6" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-        <h4 class="modal-title">Kumar Anshu</h4>
-          <button style="cursor:pointer" type="button" class="close" data-dismiss="modal">&times;</button>
-    
-        </div>
-        <div class="modal-body">
-            <div class="spe" style="">
-      
-                <div class="row" >
-                    <div class="speimg" width="" style="" >
-                        <center><img height="300px" class="rounded-circle"  src="assets/img/speakers/Anshu1.png" alt="speaker name">
-                    </div>    
-    
-                           
-                    <div class="soc" style="position: absolute;">
-                        <a href="https://in.linkedin.com/in/anshu-kumar-897284a2"><i class="ion-social-linkedin" id="link"></i></a><br>
-                        <a href="#"><i class="ion-social-facebook" id="face"></i></a><br>
-                        <a href="#"><i class="ion-social-instagram" id="inst"></i></a><br>
-                        <a href="#"><i class="ion-social-twitter" id="twit"></i></a><br>
-    
-                    </div>
-                </div>
-            </div>
-    
-    
-                <br><br>
-                <span>Kumar Anshu is a part time standup comedian along with Founder & Chief Everything Officer (a.k.a. CEO) of Bots 'N Brains, a young startup with an audacious dream of transforming India into top 10 Innovation hubs of the world. He is an alumnus of IIT Bombay & IIM Lucknow and also a certified Six Sigma Black Belt, PMP, ISO 9001 Lead Auditor & Behavioural Trainer.</span>
-            <br><br>
-            </center>
-            
-    
-        </div>
-        <div >
-         <center> <button type="button" id="buysp" class="btn btn-default"><a href="https://www.townscript.com/e/tedxmitaoe-323323">Buy Tickets</a></button></center>
-         <br>
-        </div>
-      </div>
-    
-    </div>
-    </div>
+
     
     </div>
 
@@ -1877,335 +1483,7 @@ His main area of research and work have been consultation liaison Psychiatry, Ch
 </section>
 <!--speaker section end -->
 
-<!-- Timer Code -->
-<br><br><br>
-<div class="myclass">
 
-    <div class="containern" id="days">
-        <div class="cube">
-
-            <div class="side front black">
-                <div class="t1"><span id="demo1"> </span><div class="t2"><br>Days <br></div></div>
-            </div>
-
-            <div class="side left grey">
-                <div class="t1"><span id="demo2"> </span><div class="t2"> <br>Days<br></div></div>
-            </div>
-
-            <div class="side black">
-                <div class="t1"><span id="demo"> </span><div class="t2"> <br>Days<br></div></div>
-            </div>
-
-            <div class="side back black">
-                <div class="t1"><span id="demo100"> </span><div class="t2"><br>Days<br></div></div>
-            </div>
-
-            <div class="side right grey">
-                <div class="t1"><span id="demo3"> </span><div class="t2"><br>Days<br></div></div>
-            </div>
-
-            <div class="side top black">
-                <div class="t1"><span id="demo4"> </span><div class="t2"><br>Days<br></div></div>
-            </div>
-
-            <div class="side bottom black">
-                <div class="t1"><span id="demo5"> </span><div class="t2"><br>Days<br></div></div>
-            </div>
-
-        </div>
-
-    </div>
-
-
-
-    <div class="containern" id="hours">
-
-
-        <div class="cube">
-
-            <div class="side back black">
-                <div class="t1"><span id="demo6"></span><div class="t2"><br>HOURS<br></div></div>
-            </div>
-
-            <div class="side left grey">
-                <div class="t1"><span id="demo7"> </span><div class="t2"><br>HOURS<br></div></div>
-            </div>
-
-            <div class="side front black">
-                <div class="t1"><span id="demo8"> </span><div class="t2"><br>HOURS<br></div></div>
-            </div>
-
-            <div class="side right grey">
-                <div class="t1"><span id="demo9"> </span><div class="t2"><br>HOURS<br></div></div>
-            </div>
-
-            <div class="side top black">
-                <div class="t1"><span id="demo10"> </span><div class="t2"><br>HOURS<br></div></div>
-            </div>
-
-            <div class="side bottom black">
-                <div class="t1"><span id="demo11"> </span><div class="t2"><br>HOURS<br></div></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="containern" id="minutes">
-
-        <div class="cube">
-
-            <div class="side back black">
-                <div class="t1"><span id="demo12"> </span><div class="t2"><br>MIN<br></div></div>
-            </div>
-
-            <div class="side left grey">
-                <div class="t1"><span id="demo13"> </span><div class="t2"><br>MIN<br></div></div>
-            </div>
-
-            <div class="side front black">
-                <div class="t1"><span id="demo14"> </span><div class="t2"><br>MIN<br></div></div>
-            </div>
-
-            <div class="side right grey">
-                <div class="t1"><span id="demo15"> </span><div class="t2"><br>MIN<br></div></div>
-            </div>
-
-            <div class="side top black">
-                <div class="t1"><span id="demo16"> </span><div class="t2"><br>MIN<br></div></div>
-            </div>
-
-            <div class="side bottom black">
-                <div class="t1"><span id="demo17"> </span><div class="t2"><br>MIN<br></div></div>
-            </div>
-
-        </div>
-
-
-    </div>
-
-
-
-    <div class="containern" id="seconds">
-
-        <div class="cube">
-
-            <div class="side back black">
-                <div class="t1"><span id="demo18"> </span><div class="t2"><br>SEC<br></div></div>
-            </div>
-
-            <div class="side left grey">
-                <div class="t1"><span id="demo19"> </span><div class="t2"><br>SEC<br></div></div>
-            </div>
-
-            <div class="side front black">
-                <div class="t1"><span id="demo20"> </span><div class="t2"><br>SEC<br></div></div>
-            </div>
-
-            <div class="side right grey">'
-                <div class="t1"><span id="demo21"> </span><div class="t2"><br>SEC<br></div></div>
-            </div>
-
-            <div class="side top black">
-                <div class="t1"><span id="demo22"> </span><div class="t2"><br>SEC<br></div></div>
-            </div>
-
-            <div class="side bottom black">
-                <div class="t1"><span id="demo23"> </span><div class="t2"><br>SEC<br></div></div>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jan 18, 2020").getTime();
-
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-
-            // Get today's date and time
-          var now = new Date().getTime();
-
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-          // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML = days;
-          document.getElementById("demo100").innerHTML = days;
-          document.getElementById("demo1").innerHTML = days;
-          document.getElementById("demo2").innerHTML = days;
-          document.getElementById("demo3").innerHTML = days;
-          document.getElementById("demo4").innerHTML = days;
-          document.getElementById("demo5").innerHTML = days;
-
-          document.getElementById("demo6").innerHTML = hours;
-          document.getElementById("demo7").innerHTML = hours;
-          document.getElementById("demo8").innerHTML = hours;
-          document.getElementById("demo9").innerHTML = hours;
-          document.getElementById("demo10").innerHTML = hours;
-          document.getElementById("demo11").innerHTML = hours;
-
-          document.getElementById("demo12").innerHTML = minutes;
-          document.getElementById("demo13").innerHTML = minutes;
-          document.getElementById("demo14").innerHTML = minutes;
-          document.getElementById("demo15").innerHTML = minutes;
-          document.getElementById("demo16").innerHTML = minutes;
-          document.getElementById("demo17").innerHTML = minutes;
-
-          document.getElementById("demo18").innerHTML = seconds;
-          document.getElementById("demo19").innerHTML = seconds;
-          document.getElementById("demo20").innerHTML = seconds;
-          document.getElementById("demo21").innerHTML = seconds;
-          document.getElementById("demo22").innerHTML = seconds;
-          document.getElementById("demo23").innerHTML = seconds;
-
-
-          // If the count down is over, write some text
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-        }, 1000);
-        </script>
-
-<br><br>
-
-
-
-<!-- Timer Code Ends here -->
-<!--event info -->
-<section class="pt100 pb100">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-6 col-md-3  ">
-                <div class="icon_box_two" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000" class="col-6 col-md-3  ">
-                    <i data-toggle="modal" data-target="#calender" style="cursor: pointer;"  class="ion-ios-calendar-outline"></i>
-                    <!-- Modal -->
-<div class="modal fade" id="calender" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-        <h4 class="modal-title">Save the Date</h4>
-          <button style="cursor:pointer" type="button" class="close" data-dismiss="modal">&times;</button>
-
-        </div>
-        
-        <div class="modal-body">
-         
-
-
- <h2><center>18 January 2020<br> Pune</center></h2>
-                
-     <br><br>
-            </center>
-                <br>
-
-
-    </div>
-        <div >
-         <center> <button type="button" id="buysp" class="btn btn-default"><a href="https://www.townscript.com/e/tedxmitaoe-323323">Buy Tickets</a></button></center>
-         <br>
-        </div>
-      </div>
-
-    </div>
-  </div>
-                    <div class="content">
-                        <h5 data-toggle="modal" data-target="#calender" class="box_title" id='datetimepicker1' style="cursor: pointer;">
-                            DATE
-                        </h5>
-                        <p>
-                            18th January, 2020
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3  " data-sal="slide-down" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000" class="col-6 col-md-3  ">
-                <div class="icon_box_two">
-                    <a href="https://www.google.com/maps/dir//auto+cluster+exhibition/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bc2b84992d04bbd:0x9f1c44fb853ba461?sa=X&ved=2ahUKEwjluNSAu9XmAhU48HMBHUfMAxIQ9RcwC3oECA0QDg">
-                    <i class="ion-ios-location-outline"></i></a>
-                    <div class="content">
-                        <a href="https://www.google.com/maps/dir//auto+cluster+exhibition/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x3bc2b84992d04bbd:0x9f1c44fb853ba461?sa=X&ved=2ahUKEwjluNSAu9XmAhU48HMBHUfMAxIQ9RcwC3oECA0QDg"> <h5 class="box_title">
-                            location
-                        </h5></a>
-                        <p>
-                            Auto Cluster, Pune
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3  " data-sal="slide-down" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000">
-                <div class="icon_box_two">
-                    <a href="#speaker">
-                        <a href=""> <i class="ion-ios-person-outline"></i></a>
-                    <div class="content">
-                        <a href="#sperker"><h5 class="box_title">
-                            speakers
-                        </h5></a>
-                        <p>
-                            7 Speakers
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-6 col-md-3  " data-sal="slide-down" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000">
-                <div class="icon_box_two">
-                    <a href="https://www.townscript.com/e/tedxmitaoe-323323">
-                    <i class="ion-ios-pricetag-outline"></i>
-                    <div class="content">
-                        <h5 class="box_title">
-                            ticket
-                        </h5>
-                        <p>
-                            ₹699 early bird
-                        </p>
-                    </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--event info end -->
-
-<!--get tickets section -->
-<section class="bg-img pt100 pb100" >
-    <div class="container">
-        <div class="section_title mb30">
-            <h3 data-sal="zoom-in" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000" class="title" style="color:black;height: 30px; position: absolute; margin-top: 0px;  border-left: 4px solid #e62b1e;">
-            </h3>
-            <h3  data-sal="zoom-in" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000">
-                &nbsp; &nbsp; GET YOUR TICKETS
-            </h3>
-        </div>
-        <div class="row justify-content-center align-items-center">
-            <div  data-sal="zoom-in" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000" style="color:black" class="col-md-9 text-md-left text-center">
-                Spark deep conversations and connections at the ultimate brain spa in the company of thought leaders. Hold on to your seats as you journey into the future with Momentum. <br />Are you exciTED? <br />Grab your tickets NOW !
-            </div>
-            <div  data-sal="zoom-in" data-sal-delay="500" data-sal-easing="ease-out-bounce" data-sal-duration="1000" class="col-md-3 text-md-right text-center">
-                <a href="https://www.townscript.com/e/tedxmitaoe-323323" class="btn btn-primary btn-rounded mt30">buy now</a>
-            </div>
-        </div>
-    </div>
-</section>
 <!--get tickets section end-->
 <footer class="footerr">
     <div class="container">
