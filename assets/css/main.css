@@ -2421,7 +2421,7 @@ Cover
 }
 .speaker_box .speaker_img img {
   width: 90%;
-  height: 280px;
+  height: 90%;
   border-radius: 50%;
   -webkit-transition: all ease-out 0.4s;
   transition: all ease-in 0.4s;
